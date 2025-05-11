@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { ChevronDown } from 'lucide-react';
 import { conferenceInfo } from '../../data/conferenceData';
 
 const Hero: React.FC = () => {
@@ -9,12 +8,14 @@ const Hero: React.FC = () => {
       id="home" 
       className="min-h-screen relative flex items-center justify-center overflow-hidden pt-16"
       style={{ 
-        background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+        background: 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url(/rvitm.jpg)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        width: '100%'
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-900/50 to-gray-900/80 mix-blend-multiply" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary-900/40 to-gray-900/70 mix-blend-multiply" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div className="animate-zoom-in">
@@ -70,7 +71,6 @@ const Hero: React.FC = () => {
             duration={700}
             className="text-white cursor-pointer"
           >
-            <ChevronDown size={28} />
           </Link>
         </div>
       </div>

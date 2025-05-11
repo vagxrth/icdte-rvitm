@@ -314,11 +314,11 @@ export const conferenceInfo = {
   title: 'International Conference on Digital Technology and Engineering 2025',
   shortTitle: 'ICDTE 2025',
   dates: 'March 10-12, 2025',
-  location: 'Technology Innovation Center, Singapore',
+  location: 'RV Institute of Technology and Management, Bengaluru',
   description: 'ICDTE 2025 brings together researchers, practitioners, and industry experts to share cutting-edge research, innovations, and applications in digital technology and engineering.',
-  email: 'contact@icdte2025.org',
-  phone: '+65 6123 4567',
-  venueAddress: '123 Innovation Boulevard, Singapore 123456',
+  email: 'info.rvitm@rvei.edu.in',
+  phone: '+91 8951758140',
+  venueAddress: 'Chaithanya Layout, 8th Phase, JP Nagar, Bangalore, Karnataka - 560076',
   organizers: ['IEEE Singapore Section', 'National University of Singapore', 'Singapore Institute of Technology'],
   sponsors: [
     {
