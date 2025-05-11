@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Users, Award, Zap } from 'lucide-react';
+import { Globe, Users, Award, Zap, GraduationCap, Building2, BookOpen, Users2 } from 'lucide-react';
 import { conferenceInfo } from '../../data/conferenceData';
 
 const About: React.FC = () => {
@@ -68,6 +68,60 @@ const About: React.FC = () => {
                     </span>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-16 reveal">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+            <h3 className="text-2xl font-semibold mb-6 text-primary-600 dark:text-primary-400 text-center">About RV Institute of Technology and Management</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                  RV Institute of Technology and Management (RVITM) is a premier engineering institution established under the aegis of Rashtreeya Sikshana Samithi Trust (RSST). Located in the heart of Bangalore, RVITM is committed to excellence in technical education, research, and innovation.
+                </p>
+                <p className="text-gray-700 dark:text-gray-300">
+                  The institute offers undergraduate and postgraduate programs in various engineering disciplines, fostering an environment of academic excellence, research, and industry collaboration.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <span className="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-full mr-3 text-primary-600 dark:text-primary-400 flex-shrink-0">
+                    <GraduationCap size={20} />
+                  </span>
+                  <div>
+                    <h4 className="font-medium text-gray-800 dark:text-gray-200">Academic Excellence</h4>
+                    <p className="text-gray-600 dark:text-gray-300">State-of-the-art facilities and experienced faculty</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-full mr-3 text-primary-600 dark:text-primary-400 flex-shrink-0">
+                    <Building2 size={20} />
+                  </span>
+                  <div>
+                    <h4 className="font-medium text-gray-800 dark:text-gray-200">Infrastructure</h4>
+                    <p className="text-gray-600 dark:text-gray-300">Modern laboratories and research facilities</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-full mr-3 text-primary-600 dark:text-primary-400 flex-shrink-0">
+                    <BookOpen size={20} />
+                  </span>
+                  <div>
+                    <h4 className="font-medium text-gray-800 dark:text-gray-200">Research Focus</h4>
+                    <p className="text-gray-600 dark:text-gray-300">Strong emphasis on research and development</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-full mr-3 text-primary-600 dark:text-primary-400 flex-shrink-0">
+                    <Users2 size={20} />
+                  </span>
+                  <div>
+                    <h4 className="font-medium text-gray-800 dark:text-gray-200">Industry Connect</h4>
+                    <p className="text-gray-600 dark:text-gray-300">Strong industry partnerships and collaborations</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
