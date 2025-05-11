@@ -11,7 +11,6 @@ const navigationItems = [
   { name: 'Important Dates', href: 'important-dates' },
   { name: 'Committees', href: 'committees' },
   { name: 'Registration', href: 'registration' },
-  { name: 'Speakers', href: 'speakers' },
   { name: 'Schedule', href: 'schedule' },
   { name: 'Venue', href: 'venue' },
   { name: 'Contact', href: 'contact' },
