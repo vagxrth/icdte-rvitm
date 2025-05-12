@@ -9,8 +9,8 @@ const Venue: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 reveal">
           <h2 className="section-title">Venue</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
-            ICDTE 2025 will be held at the prestigious Technology Innovation Center in Singapore,
-            a state-of-the-art facility designed for academic conferences and professional gatherings.
+            ICDTE 2025 will be held at the prestigious RV Institute of Technology and Management in Bangalore,
+            a reputed institution known for its excellence in education and research.
           </p>
         </div>
         
@@ -32,7 +32,7 @@ const Venue: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md h-full">
               <h3 className="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-400">
-                Technology Innovation Center
+                RV Institute of Technology and Management
               </h3>
               
               <div className="space-y-4">
@@ -70,24 +70,9 @@ const Venue: React.FC = () => {
                   Getting There
                 </h4>
                 <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <p><span className="font-medium">From Airport:</span> 30 minutes by taxi or 45 minutes by public transport</p>
-                  <p><span className="font-medium">Nearby MRT:</span> Central Station (5-minute walk)</p>
+                  <p><span className="font-medium">Nearby Metro Station:</span> Konanakunte Cross (3.6 kms)</p>
                   <p><span className="font-medium">Parking:</span> Available at the venue (limited spots)</p>
                 </div>
-              </div>
-              
-              <div className="mt-8">
-                <h4 className="font-medium text-lg text-gray-800 dark:text-gray-200 mb-3">
-                  Accommodations
-                </h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-2">
-                  Special rates are available at the following hotels:
-                </p>
-                <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300">
-                  <li>Tech Plaza Hotel (5-minute walk)</li>
-                  <li>Cityview Inn (10-minute walk)</li>
-                  <li>Grand Central Hotel (15-minute by taxi)</li>
-                </ul>
               </div>
             </div>
           </div>
