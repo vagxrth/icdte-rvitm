@@ -18,7 +18,7 @@ const Venue: React.FC = () => {
           <div className="lg:col-span-3 rounded-xl overflow-hidden shadow-md h-full">
             <div className="relative pb-[56.25%] h-0">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.51932004223!2d103.8003086431961!3d1.35097355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1767b42b8ec9%3A0x400f7acaedaa420!2sSingapore!5e0!3m2!1sen!2sus!4v1625654728377!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.541551615487!2d77.57329667581237!3d12.872860287433571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6ab2ff6b8611%3A0x8417272c1b6f4d24!2sRV%20INSTITUTE%20OF%20TECHNOLOGY%20AND%20MANAGEMENT%20%C2%AE!5e0!3m2!1sen!2sin!4v1747008009694!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
