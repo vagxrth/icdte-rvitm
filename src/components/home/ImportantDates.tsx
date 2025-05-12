@@ -10,7 +10,7 @@ const ImportantDates: React.FC = () => {
           <h2 className="section-title">Important Dates</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
             Mark your calendars with these critical deadlines for the ICDTE 2025 conference.
-            All deadlines are end of day Anywhere on Earth (AoE) time.
+            All deadlines are end of day Indian Standard Time (IST) time.
           </p>
         </div>
         

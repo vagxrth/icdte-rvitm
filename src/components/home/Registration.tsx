@@ -37,8 +37,7 @@ const Registration: React.FC = () => {
                     {type.type} Registration
                   </h3>
                   <div className="flex items-end mb-4">
-                    <span className="text-3xl font-bold text-primary-600 dark:text-primary-400">${type.price}</span>
-                    <span className="text-gray-500 dark:text-gray-300 ml-1">USD</span>
+                    <span className="text-3xl font-bold text-primary-600 dark:text-primary-400">₹{type.price}</span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 mb-6">
                     {type.description}
@@ -88,8 +87,8 @@ const Registration: React.FC = () => {
                   We accept the following payment methods:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>Credit/Debit Cards (Visa, MasterCard, Amex)</li>
-                  <li>PayPal</li>
+                  <li>Credit/Debit Cards (Visa, MasterCard, RuPay)</li>
+                  <li>UPI</li>
                   <li>Bank Transfer</li>
                 </ul>
               </div>
