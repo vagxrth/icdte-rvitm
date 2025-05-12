@@ -22,11 +22,11 @@ const Registration: React.FC = () => {
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               <div className={`h-full bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 flex flex-col ${
-                index === 1 ? 'border-2 border-primary-500 dark:border-primary-400 relative' : ''
+                index === 1 ? 'border-2 border-primary-500 dark:border-primary-400 relative mt-6' : ''
               }`}>
                 {index === 1 && (
-                  <div className="absolute top-0 inset-x-0 transform -translate-y-1/2">
-                    <span className="bg-primary-500 text-white text-sm font-semibold py-1 px-3 rounded-full inline-block shadow-sm">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span className="bg-primary-500 text-white px-4 py-1 rounded-full inline-block shadow-sm text-sm font-semibold whitespace-nowrap">
                       Recommended
                     </span>
                   </div>
