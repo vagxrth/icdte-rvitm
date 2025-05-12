@@ -25,7 +25,7 @@ const Registration: React.FC = () => {
                 index === 1 ? 'border-2 border-primary-500 dark:border-primary-400 relative' : ''
               }`}>
                 {index === 1 && (
-                  <div className="absolute top-0 inset-x-0 transform -translate-y-1/2">
+                  <div className="absolute top-2.5 inset-x-0 transform -translate-y-1/2">
                     <span className="bg-primary-500 text-white text-sm font-semibold py-1 px-3 rounded-full inline-block shadow-sm">
                       Recommended
                     </span>
