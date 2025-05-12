@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Youtube, Instagram } from 'lucide-react';
 import { conferenceInfo } from '../../data/conferenceData';
 
 const Footer: React.FC = () => {
@@ -16,17 +16,20 @@ const Footer: React.FC = () => {
             <p className="mb-4 text-gray-300">{conferenceInfo.dates}</p>
             <p className="mb-4 text-gray-300">{conferenceInfo.location}</p>
             <div className="flex space-x-4 mt-6">
-              <a href="https://twitter.com" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Twitter">
+              <a href="https://x.com/rvitm_official" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
-              <a href="https://linkedin.com" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/school/rv-institute-of-technology-and-management/posts/?feedView=all" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="https://facebook.com" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/RVITMblr/" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="https://youtube.com" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="YouTube">
+              <a href="https://www.youtube.com/channel/UCxUL5NRpJ8c8kxFTt-8CrkQ" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="YouTube">
                 <Youtube size={20} />
+              </a>
+              <a href="https://www.instagram.com/rvitmblr/" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Instagram">
+                <Instagram size={20} />
               </a>
             </div>
           </div>
