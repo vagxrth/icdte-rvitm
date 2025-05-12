@@ -89,13 +89,13 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           
-          {/* Organizers */}
+          {/* Sponsors */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-primary-400">Organizers</h3>
+            <h3 className="text-xl font-semibold mb-4 text-primary-400">Sponsors</h3>
             <ul className="space-y-2">
-              {conferenceInfo.organizers.map((organizer, index) => (
+              {conferenceInfo.sponsors.map((sponsor, index) => (
                 <li key={index} className="text-gray-300">
-                  {organizer}
+                  {sponsor.name}
                 </li>
               ))}
             </ul>
