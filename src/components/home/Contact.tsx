@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
                       </a>
                     </p>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Available weekdays from 9 AM to 5 PM (Singapore Time)
+                      Available weekdays from 9 AM to 5 PM (Indian Standard Time)
                     </p>
                   </div>
                 </div>
@@ -190,30 +190,6 @@ const Contact: React.FC = () => {
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300">
                       {conferenceInfo.venueAddress}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-8">
-                <h4 className="font-medium text-lg text-gray-800 dark:text-gray-200 mb-4">
-                  Frequently Asked Questions
-                </h4>
-                <div className="space-y-4">
-                  <div>
-                    <h5 className="font-medium text-gray-800 dark:text-gray-200 mb-1">
-                      What is the deadline for paper submission?
-                    </h5>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      The deadline for paper submission is September 30, 2024.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-medium text-gray-800 dark:text-gray-200 mb-1">
-                      Are there any accommodation discounts for attendees?
-                    </h5>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Yes, special rates are available at partner hotels. Details will be provided upon registration.
                     </p>
                   </div>
                 </div>
