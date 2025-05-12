@@ -59,7 +59,9 @@ const Header: React.FC = () => {
               className="cursor-pointer"
             >
               <div className="flex items-center space-x-2">
-                <span className="text-xl md:text-2xl font-bold gradient-text">{conferenceInfo.shortTitle}</span>
+                <span className={`text-xl md:text-2xl font-bold gradient-text ${!isScrolled && 'text-white'}`}>
+                  {conferenceInfo.shortTitle}
+                </span>
               </div>
             </Link>
           </div>
@@ -76,8 +78,10 @@ const Header: React.FC = () => {
                 duration={500}
                 className={`px-3 py-2 text-sm font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   activeSection === item.href
-                    ? 'text-primary-600 dark:text-primary-400'
-                    : 'text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400'
+                    ? 'text-primary-400'
+                    : isScrolled
+                      ? 'text-gray-900 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400'
+                      : 'text-white hover:text-primary-200'
                 }`}
               >
                 {item.name}
@@ -85,7 +89,11 @@ const Header: React.FC = () => {
             ))}
             <button
               onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 focus:outline-none"
+              className={`ml-4 p-2 rounded-full focus:outline-none ${
+                isScrolled
+                  ? 'text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400'
+                  : 'text-white hover:text-primary-200'
+              }`}
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
@@ -96,14 +104,22 @@ const Header: React.FC = () => {
           <div className="flex md:hidden items-center space-x-4">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 focus:outline-none"
+              className={`p-2 rounded-full focus:outline-none ${
+                isScrolled
+                  ? 'text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400'
+                  : 'text-white hover:text-primary-200'
+              }`}
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </button>
             <button
               onClick={toggleMenu}
-              className="p-2 rounded-md text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 focus:outline-none"
+              className={`p-2 rounded-md focus:outline-none ${
+                isScrolled
+                  ? 'text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400'
+                  : 'text-white hover:text-primary-200'
+              }`}
               aria-label="Open menu"
             >
               <Menu size={24} />
@@ -148,7 +164,7 @@ const Header: React.FC = () => {
                 className={`px-4 py-3 text-lg font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   activeSection === item.href
                     ? 'bg-primary-50 text-primary-600 dark:bg-primary-900/20 dark:text-primary-400'
-                    : 'text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800'
+                    : 'text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800'
                 }`}
               >
                 {item.name}
