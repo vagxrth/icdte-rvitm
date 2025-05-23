@@ -151,12 +151,6 @@ const Contact: React.FC = () => {
                         {conferenceInfo.email}
                       </a>
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Paper Submissions:
-                      <a href="mailto:papers@icdte2025.org" className="ml-1 text-primary-600 dark:text-primary-400 hover:underline">
-                        papers@icdte2025.org
-                      </a>
-                    </p>
                   </div>
                 </div>
                 
@@ -169,13 +163,22 @@ const Contact: React.FC = () => {
                       Call Us
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 mb-1">
-                      Conference Secretariat:
-                      <a href={`tel:${conferenceInfo.phone}`} className="ml-1 text-primary-600 dark:text-primary-400 hover:underline">
-                        {conferenceInfo.phone}
+                      Dr. Savitha G:
+                      <a href="tel:+919964157771" className="ml-1 text-primary-600 dark:text-primary-400 hover:underline">
+                        +91 99641 57771
                       </a>
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Available weekdays from 9 AM to 5 PM (Indian Standard Time)
+                    <p className="text-gray-600 dark:text-gray-300 mb-1">
+                      Dr. Deepak N A:
+                      <a href="tel:+919483866203" className="ml-1 text-primary-600 dark:text-primary-400 hover:underline">
+                        +91 9483866203
+                      </a>
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-300 mb-1">
+                      Dr. Anil Kumar B:
+                      <a href="tel:+919342834667" className="ml-1 text-primary-600 dark:text-primary-400 hover:underline">
+                        +91 93428 34667
+                      </a>
                     </p>
                   </div>
                 </div>
