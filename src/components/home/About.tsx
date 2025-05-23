@@ -18,13 +18,20 @@ const About: React.FC = () => {
             <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md h-full">
               <h3 className="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-400">Vision & Scope</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                ICDTE 2025 aims to foster collaboration between academia and industry, bringing together researchers, 
-                engineers, and practitioners to exchange ideas and address challenges in the rapidly evolving fields 
-                of digital technology and engineering.
+                The International Conference on Digital Technology and Engineering (ICDTE-2025) is a distinguished platform that
+                brings together experts, researchers, industry leaders, and students from around the world to engage in a comprehensive
+                exchange of ideas and knowledge. With a focus on advancing the field of digital technology and engineering, the conference
+                provides an opportunity for showcasing cutting-edge research, innovative solutions, and impactful practices.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                ICDTE-2025 encourages collaboration across disciplines, aiming to inspire new perspectives and drive progress in areas 
+                critical to the future of technology. The conference will serve as a space for discussions, learning, and sharing valuable 
+                insights related to the challenges and opportunities faced in digital technology and engineering.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                The conference provides a platform for sharing novel research findings, discussing emerging trends, 
-                and exploring innovative solutions to complex problems facing our interconnected world.
+                By creating an inclusive and forward-thinking environment, ICDTE-2025 plays an important role in shaping the future of 
+                the technological landscape globally. The event will feature keynote addresses, technical sessions, workshops, and panel 
+                discussions led by eminent figures from academia and industry.
               </p>
             </div>
           </div>
