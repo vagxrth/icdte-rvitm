@@ -6,14 +6,12 @@ export const tracks: Track[] = [
     title: 'Artificial Intelligence and Machine Learning',
     description: 'Latest advances in AI/ML algorithms, applications, and methodologies',
     topics: [
-      'Deep Learning and Neural Networks',
-      'Natural Language Processing',
-      'Computer Vision and Pattern Recognition',
-      'Reinforcement Learning',
-      'AI Ethics and Explainable AI',
-      'Machine Learning for Big Data',
-      'Transfer Learning and Few-Shot Learning',
-      'AI in Healthcare and Medicine'
+      'Deep Learning Architectures and Applications',
+      'Natural Language Processing and Conversational AI',
+      'Explainable AI and Ethical Machine Learning',
+      'AI for Healthcare, Finance, and Smart Cities',
+      'Reinforcement Learning and Autonomous Systems',
+      'Generative AI and Foundation Models'
     ]
   },
   {
@@ -21,14 +19,13 @@ export const tracks: Track[] = [
     title: 'Internet of Things (IoT) and Cyber-Physical Systems',
     description: 'Innovative solutions in IoT architectures and cyber-physical system integration',
     topics: [
-      'IoT Architecture and Protocols',
-      'Sensor Networks and Data Collection',
-      'Smart Cities and Infrastructure',
-      'Industrial IoT (IIoT)',
-      'IoT Security and Privacy',
-      'Real-time Systems',
-      'Energy-Efficient IoT Solutions',
-      'IoT Applications and Use Cases'
+      'Smart Sensors and Actuators in IoT',
+      'IoT Protocols and Edge Intelligence',
+      'Cyber-Physical Systems for Smart Manufacturing and Industry 4.0',
+      '5G/6G and Wireless Technologies for IoT Applications',
+      'Security and Privacy in IoT Systems',
+      'Energy-Efficient IoT and Sustainable Connectivity',
+      'Interoperability and Standardization in IoT Ecosystems'
     ]
   },
   {
@@ -36,14 +33,11 @@ export const tracks: Track[] = [
     title: 'Cybersecurity and Blockchain',
     description: 'Advanced security solutions and distributed ledger technologies',
     topics: [
-      'Network Security',
-      'Cryptography and Privacy',
-      'Blockchain Applications',
-      'Smart Contracts',
-      'Security in Cloud Computing',
-      'Malware Analysis and Detection',
-      'Authentication and Access Control',
-      'Digital Forensics'
+      'Network Security and Threat Detection',
+      'Blockchain Technologies for Secure Transactions and Identity Management',
+      'Cryptography and Secure Protocols',
+      'AI in Cyber Threat Prediction and Response',
+      'Cybersecurity Challenges in Critical Infrastructure and IoT'
     ]
   },
   {
@@ -51,14 +45,11 @@ export const tracks: Track[] = [
     title: 'Cloud, Fog, Edge, and Next-Generation Networks',
     description: 'Cutting-edge research in distributed computing and network architectures',
     topics: [
-      'Cloud Computing Architectures',
-      'Edge Computing',
-      'Fog Computing',
-      '5G/6G Networks',
-      'Software-Defined Networks',
-      'Network Virtualization',
-      'Quality of Service',
-      'Green Computing'
+      'Cloud-Native Application Development and Orchestration',
+      'Fog and Edge Computing for Low Latency Applications',
+      'Next-Gen Network Architectures (SDN/NFV)',
+      'Resource Allocation and Load Balancing in Distributed Systems',
+      'Security and Privacy in Multi-Tier Computing Environments'
     ]
   },
   {
@@ -66,14 +57,11 @@ export const tracks: Track[] = [
     title: 'Embedded Systems and Robotics',
     description: 'Innovations in embedded technology and robotic systems',
     topics: [
-      'Embedded System Design',
-      'Real-time Operating Systems',
-      'Robotics Control Systems',
-      'Autonomous Systems',
-      'Human-Robot Interaction',
-      'Microcontroller Applications',
-      'FPGA Design',
-      'Industrial Automation'
+      'Real-Time Operating Systems and Embedded Software Design',
+      'Autonomous and Swarm Robotics',
+      'Hardware-Software Co-design and Optimization',
+      'Robotics in Healthcare, Agriculture, and Industry',
+      'Sensor Fusion and Control Algorithms in Embedded Platforms'
     ]
   }
 ];
