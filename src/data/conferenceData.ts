@@ -1,5 +1,83 @@
 import { Speaker, ImportantDate, CommitteeMember, Track, RegistrationType, Event } from '../types';
 
+export const tracks: Track[] = [
+  {
+    id: 1,
+    title: 'Artificial Intelligence and Machine Learning',
+    description: 'Latest advances in AI/ML algorithms, applications, and methodologies',
+    topics: [
+      'Deep Learning and Neural Networks',
+      'Natural Language Processing',
+      'Computer Vision and Pattern Recognition',
+      'Reinforcement Learning',
+      'AI Ethics and Explainable AI',
+      'Machine Learning for Big Data',
+      'Transfer Learning and Few-Shot Learning',
+      'AI in Healthcare and Medicine'
+    ]
+  },
+  {
+    id: 2,
+    title: 'Internet of Things (IoT) and Cyber-Physical Systems',
+    description: 'Innovative solutions in IoT architectures and cyber-physical system integration',
+    topics: [
+      'IoT Architecture and Protocols',
+      'Sensor Networks and Data Collection',
+      'Smart Cities and Infrastructure',
+      'Industrial IoT (IIoT)',
+      'IoT Security and Privacy',
+      'Real-time Systems',
+      'Energy-Efficient IoT Solutions',
+      'IoT Applications and Use Cases'
+    ]
+  },
+  {
+    id: 3,
+    title: 'Cybersecurity and Blockchain',
+    description: 'Advanced security solutions and distributed ledger technologies',
+    topics: [
+      'Network Security',
+      'Cryptography and Privacy',
+      'Blockchain Applications',
+      'Smart Contracts',
+      'Security in Cloud Computing',
+      'Malware Analysis and Detection',
+      'Authentication and Access Control',
+      'Digital Forensics'
+    ]
+  },
+  {
+    id: 4,
+    title: 'Cloud, Fog, Edge, and Next-Generation Networks',
+    description: 'Cutting-edge research in distributed computing and network architectures',
+    topics: [
+      'Cloud Computing Architectures',
+      'Edge Computing',
+      'Fog Computing',
+      '5G/6G Networks',
+      'Software-Defined Networks',
+      'Network Virtualization',
+      'Quality of Service',
+      'Green Computing'
+    ]
+  },
+  {
+    id: 5,
+    title: 'Embedded Systems and Robotics',
+    description: 'Innovations in embedded technology and robotic systems',
+    topics: [
+      'Embedded System Design',
+      'Real-time Operating Systems',
+      'Robotics Control Systems',
+      'Autonomous Systems',
+      'Human-Robot Interaction',
+      'Microcontroller Applications',
+      'FPGA Design',
+      'Industrial Automation'
+    ]
+  }
+];
+
 export const speakers: Speaker[] = [
   {
     id: 1,
@@ -127,57 +205,6 @@ export const committeeMembers: CommitteeMember[] = [
     role: 'Publicity Chair',
     affiliation: 'University of Toronto',
     country: 'Canada'
-  }
-];
-
-export const tracks: Track[] = [
-  {
-    id: 1,
-    title: 'Artificial Intelligence & Machine Learning',
-    description: 'Latest advances in AI algorithms, applications, and ethics',
-    topics: [
-      'Deep Learning Architectures',
-      'Natural Language Processing',
-      'Computer Vision',
-      'AI Ethics and Governance',
-      'Reinforcement Learning'
-    ]
-  },
-  {
-    id: 2,
-    title: 'Cybersecurity & Privacy',
-    description: 'Emerging threats, defensive strategies, and privacy-preserving technologies',
-    topics: [
-      'Network Security',
-      'Malware Analysis',
-      'Cryptography',
-      'Privacy-Enhancing Technologies',
-      'Secure Software Development'
-    ]
-  },
-  {
-    id: 3,
-    title: 'Internet of Things & Edge Computing',
-    description: 'IoT architectures, edge intelligence, and real-world applications',
-    topics: [
-      'IoT Architectures',
-      'Edge Computing',
-      'IoT Security',
-      'Sensor Networks',
-      'Smart City Applications'
-    ]
-  },
-  {
-    id: 4,
-    title: 'Digital Transformation & Emerging Technologies',
-    description: 'Digital transformation strategies and adoption of emerging technologies',
-    topics: [
-      'Blockchain Applications',
-      'Extended Reality (AR/VR/MR)',
-      'Digital Twins',
-      'Industry 4.0',
-      'Quantum Computing Applications'
-    ]
   }
 ];
 
