@@ -82,7 +82,6 @@ const CallForPapers: React.FC = () => {
                 <ul className="list-disc pl-5 text-gray-600 dark:text-gray-400 space-y-2">
                   <li>Full papers: 8-10 pages including figures and references</li>
                   <li>Short papers: 4-6 pages including figures and references</li>
-                  <li>Papers must be submitted in IEEE conference format</li>
                   <li>All submissions must be in PDF format</li>
                   <li>Papers must be written in English</li>
                 </ul>
