@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, FileDown } from 'lucide-react';
 import { tracks } from '../../data/conferenceData';
 
 const CallForPapers: React.FC = () => {
@@ -95,6 +95,28 @@ const CallForPapers: React.FC = () => {
                   <li>Acceptance notification within 45 days of submission deadline</li>
                   <li>At least one author must register for the conference</li>
                 </ul>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-4 text-center">Template Download</h4>
+              <div className="flex justify-center space-x-8">
+                <a 
+                  href="/Word Template.zip" 
+                  download
+                  className="flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+                >
+                  <FileDown className="w-5 h-5" />
+                  <span>Download paper template (Microsoft Word)</span>
+                </a>
+                <a 
+                  href="/LaTex Template.zip" 
+                  download
+                  className="flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+                >
+                  <FileDown className="w-5 h-5" />
+                  <span>Download paper template (LaTex)</span>
+                </a>
               </div>
             </div>
             
