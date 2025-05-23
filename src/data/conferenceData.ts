@@ -121,33 +121,45 @@ export const speakers: Speaker[] = [
 export const importantDates: ImportantDate[] = [
   {
     id: 1,
-    title: 'Paper Submission Deadline',
-    date: 'September 30, 2024',
-    description: 'Deadline for submitting full papers and extended abstracts'
+    title: 'Manuscript Submission Starts',
+    date: 'June 05, 2025',
+    description: 'Authors can submit their manuscripts'
   },
   {
     id: 2,
-    title: 'Notification of Acceptance',
-    date: 'November 15, 2024',
-    description: 'Authors will be notified about paper acceptance'
+    title: 'Manuscript Submission Deadline',
+    date: 'July 10, 2025',
+    description: 'Last day for submitting manuscripts'
   },
   {
     id: 3,
-    title: 'Camera-ready Submission',
-    date: 'December 20, 2024',
-    description: 'Final camera-ready papers due'
+    title: 'Notification of Acceptance',
+    date: 'July 18, 2025',
+    description: 'Notification of acceptance will be sent to authors'
   },
   {
     id: 4,
-    title: 'Early Bird Registration',
-    date: 'January 15, 2025',
-    description: 'Last day for early bird registration discount'
+    title: 'Early Bird Registration Deadline',
+    date: 'August 08, 2025',
+    description: 'Last day for early bird registration'
   },
   {
     id: 5,
+    title: 'Camera-ready Submission',
+    date: 'September 01, 2025',
+    description: 'Deadline for submitting camera-ready papers'
+  },
+  {
+    id: 6,
+    title: 'Registration Deadline',
+    date: 'September 15, 2025',
+    description: 'Last day for registration'
+  },
+  {
+    id: 7,
     title: 'Conference Dates',
-    date: 'March 10-12, 2025',
-    description: 'Main conference events'
+    date: 'October 16-17, 2025',
+    description: 'Main dates of the conference'
   }
 ];
 
@@ -328,25 +340,16 @@ export const conferenceSchedule: Event[] = [
 export const conferenceInfo = {
   title: 'International Conference on Digital Technology and Engineering 2025',
   shortTitle: 'ICDTE 2025',
-  dates: 'March 10-12, 2025',
+  dates: 'October 16-17, 2025',
   location: 'RV Institute of Technology and Management, Bengaluru',
   description: 'ICDTE 2025 brings together researchers, practitioners, and industry experts to share cutting-edge research, innovations, and applications in digital technology and engineering.',
-  email: 'info.rvitm@rvei.edu.in',
+  email: 'conference.rvitm@rvei.edu.in',
   phone: '+91 8951758140',
   venueAddress: 'Chaithanya Layout, 8th Phase, JP Nagar, Bangalore, Karnataka - 560076',
   organizers: ['IEEE Singapore Section', 'National University of Singapore', 'Singapore Institute of Technology'],
   sponsors: [
     {
-      name: 'TechCorp International',
-      level: 'Platinum'
-    },
-    {
-      name: 'InnovateSG',
-      level: 'Gold'
-    },
-    {
-      name: 'Future Systems',
-      level: 'Silver'
+      name: 'Springer'
     }
   ]
 };

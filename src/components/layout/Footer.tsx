@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
           
           {/* Sponsors */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-primary-400">Sponsors</h3>
+            <h3 className="text-xl font-semibold mb-4 text-primary-400">Publication Partner</h3>
             <ul className="space-y-2">
               {conferenceInfo.sponsors.map((sponsor, index) => (
                 <li key={index} className="text-gray-300">
