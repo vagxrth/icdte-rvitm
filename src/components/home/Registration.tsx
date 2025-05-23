@@ -1,67 +1,56 @@
 import React from 'react';
-import { Check, AlertCircle } from 'lucide-react';
 import { registrationTypes } from '../../data/conferenceData';
 
 const Registration: React.FC = () => {
   return (
-    <section id="registration" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="section-container">
+    <section id="registration" className="py-20 bg-gray-50 dark:bg-gray-800 overflow-visible">
+      <div className="section-container overflow-visible py-10">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal">
           <h2 className="section-title">Registration</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
             Join us at ICDTE 2025 by registering for the conference. Early bird registration
-            discounts are available until January 15, 2025.
+            discounts are available until August 08, 2025.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {registrationTypes.map((type, index) => (
-            <div 
-              key={type.id} 
-              className="reveal" 
-              style={{ transitionDelay: `${index * 0.1}s` }}
-            >
-              <div className={`h-full bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 flex flex-col ${
-                index === 1 ? 'border-2 border-primary-500 dark:border-primary-400 relative' : ''
-              }`}>
-                {index === 1 && (
-                  <div className="absolute top-2.5 inset-x-0 transform -translate-y-1/2">
-                    <span className="bg-primary-500 text-white text-sm font-semibold py-1 px-3 rounded-full inline-block shadow-sm">
-                      Recommended
-                    </span>
+        {/* Registration Cards Scroll Area */}
+        <div className="relative py-6 overflow-visible">
+          {/* Left Fade */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-8 z-0 bg-gradient-to-r from-gray-50 dark:from-gray-800 to-transparent" />
+          {/* Right Fade */}
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-8 z-0 bg-gradient-to-l from-gray-50 dark:from-gray-800 to-transparent" />
+
+          <div className="flex gap-8 overflow-x-auto pb-4 px-2 md:px-8 scrollbar-hide snap-x snap-mandatory overflow-visible"
+            style={{scrollbarWidth: 'none'}}>
+            {registrationTypes.map((type, index) => (
+              <div
+                key={type.id}
+                className="reveal min-w-[320px] max-w-[370px] w-full snap-center my-8 overflow-visible"
+                style={{ transitionDelay: `${index * 0.1}s` }}
+              >
+                <div className="relative h-full bg-white dark:bg-gray-700 rounded-2xl overflow-visible shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col border border-gray-200 dark:border-gray-600 hover:scale-105 hover:-translate-y-1 z-20 hover:z-40">
+                  <div className="p-8 flex-grow flex flex-col justify-between">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                      {type.type} Registration
+                    </h3>
+                    <div className="flex items-end mb-4">
+                      <span className="text-3xl font-bold text-primary-600 dark:text-primary-400">₹{type.price}</span>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-300 mb-8">
+                      {type.description}
+                    </p>
                   </div>
-                )}
-                
-                <div className="p-6 flex-grow">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
-                    {type.type} Registration
-                  </h3>
-                  <div className="flex items-end mb-4">
-                    <span className="text-3xl font-bold text-primary-600 dark:text-primary-400">₹{type.price}</span>
+                  <div className="p-6 pt-0 mt-auto">
+                    <button
+                      className="w-full btn-outline text-base py-3 rounded-lg transition-all duration-200 border-2 border-primary-500 text-primary-500 bg-transparent hover:bg-primary-600 hover:text-white hover:border-primary-600"
+                    >
+                      Register Now
+                    </button>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    {type.description}
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    {type.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start">
-                        <Check className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-600 dark:text-gray-300">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <div className="p-6 pt-0 mt-auto">
-                  <button className={`w-full ${
-                    index === 1 ? 'btn btn-primary' : 'btn btn-outline'
-                  }`}>
-                    Register Now
-                  </button>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         
         <div className="mt-16 max-w-4xl mx-auto reveal">
@@ -91,16 +80,6 @@ const Registration: React.FC = () => {
                   <li>UPI</li>
                   <li>Bank Transfer</li>
                 </ul>
-              </div>
-            </div>
-            
-            <div className="mt-8 flex items-start p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-100 dark:border-amber-800">
-              <AlertCircle className="w-5 h-5 text-amber-500 dark:text-amber-400 mt-0.5 mr-3 flex-shrink-0" />
-              <div>
-                <p className="text-amber-800 dark:text-amber-300 text-sm">
-                  <span className="font-medium">Important Note:</span> At least one author per accepted paper must register at the full rate. 
-                  Early bird registration ends on January 15, 2025. Cancellations received before February 1, 2025 are eligible for a 70% refund.
-                </p>
               </div>
             </div>
           </div>

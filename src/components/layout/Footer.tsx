@@ -93,9 +93,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-primary-400">Publication Partner</h3>
             <ul className="space-y-2">
-              {conferenceInfo.sponsors.map((sponsor, index) => (
+              {conferenceInfo.partners.map((partner, index) => (
                 <li key={index} className="text-gray-300">
-                  {sponsor.name}
+                  <img src={partner.logo} alt={partner.name} className="h-12 w-auto" />
                 </li>
               ))}
             </ul>

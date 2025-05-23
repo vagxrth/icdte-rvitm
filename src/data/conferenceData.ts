@@ -1,4 +1,4 @@
-import { Speaker, ImportantDate, CommitteeMember, Track, RegistrationType, Event } from '../types';
+import { Speaker, ImportantDate, Track, RegistrationType, Event } from '../types';
 
 export const tracks: Track[] = [
   {
@@ -163,57 +163,12 @@ export const importantDates: ImportantDate[] = [
   }
 ];
 
-export const committeeMembers: CommitteeMember[] = [
-  {
-    id: 1,
-    name: 'Prof. David Williams',
-    role: 'General Chair',
-    affiliation: 'University of Cambridge',
-    country: 'United Kingdom'
-  },
-  {
-    id: 2,
-    name: 'Dr. Li Wei',
-    role: 'Program Chair',
-    affiliation: 'Tsinghua University',
-    country: 'China'
-  },
-  {
-    id: 3,
-    name: 'Dr. Ananya Patel',
-    role: 'Technical Program Committee Chair',
-    affiliation: 'Indian Institute of Technology Delhi',
-    country: 'India'
-  },
-  {
-    id: 4,
-    name: 'Prof. Maria Gonzalez',
-    role: 'Publication Chair',
-    affiliation: 'Technical University of Madrid',
-    country: 'Spain'
-  },
-  {
-    id: 5,
-    name: 'Dr. Kevin Park',
-    role: 'Finance Chair',
-    affiliation: 'Seoul National University',
-    country: 'South Korea'
-  },
-  {
-    id: 6,
-    name: 'Prof. Lisa Brown',
-    role: 'Publicity Chair',
-    affiliation: 'University of Toronto',
-    country: 'Canada'
-  }
-];
-
 export const registrationTypes: RegistrationType[] = [
   {
     id: 1,
-    type: 'Student',
-    price: 200,
-    description: 'For enrolled students',
+    type: 'Under Graduate Students ',
+    price: 3500,
+    description: 'For Under Graduate Students',
     features: [
       'Access to all sessions',
       'Conference materials',
@@ -223,9 +178,9 @@ export const registrationTypes: RegistrationType[] = [
   },
   {
     id: 2,
-    type: 'Academic',
-    price: 350,
-    description: 'For academic faculty and researchers',
+    type: 'Post Graduate Students',
+    price: 4000,
+    description: 'For Post Graduate Students',
     features: [
       'Access to all sessions',
       'Conference materials',
@@ -236,9 +191,23 @@ export const registrationTypes: RegistrationType[] = [
   },
   {
     id: 3,
-    type: 'Industry',
-    price: 550,
-    description: 'For industry professionals',
+    type: 'Academicians',
+    price: 4500,
+    description: 'For Academicians',
+    features: [
+      'Access to all sessions',
+      'Conference materials',
+      'Coffee breaks and lunches',
+      'Welcome reception',
+      'Gala dinner',
+      'Industry networking event'
+    ]
+  },
+  {
+    id: 4,
+    type: 'Industry Delegates',
+    price: 5000,
+    description: 'For Industry Delegates',
     features: [
       'Access to all sessions',
       'Conference materials',
@@ -254,7 +223,7 @@ export const conferenceSchedule: Event[] = [
   {
     id: 1,
     day: 'Day 1',
-    date: 'March 10, 2025',
+    date: 'October 16, 2025',
     activities: [
       {
         id: 101,
@@ -266,27 +235,27 @@ export const conferenceSchedule: Event[] = [
         id: 102,
         time: '09:00 - 09:30',
         title: 'Opening Ceremony',
-        location: 'Grand Ballroom',
-        speakers: ['Prof. David Williams']
+        location: 'RVITM Auditorium',
+        speakers: ['To be announced']
       },
       {
         id: 103,
         time: '09:30 - 10:30',
         title: 'Keynote: Future of AI in Engineering',
-        location: 'Grand Ballroom',
-        speakers: ['Dr. Emma Rodriguez']
+        location: 'RVITM Auditorium',
+        speakers: ['To be announced']
       },
       {
         id: 104,
         time: '10:30 - 11:00',
         title: 'Coffee Break',
-        location: 'Exhibition Hall'
+        location: 'RVITM Auditorium'
       },
       {
         id: 105,
         time: '11:00 - 12:30',
         title: 'Parallel Sessions: AI & Machine Learning',
-        location: 'Room A & B'
+        location: 'Seminar Hall'
       },
       {
         id: 106,
@@ -299,26 +268,26 @@ export const conferenceSchedule: Event[] = [
   {
     id: 2,
     day: 'Day 2',
-    date: 'March 11, 2025',
+    date: 'October 17, 2025',
     activities: [
       {
         id: 201,
         time: '09:00 - 10:00',
         title: 'Keynote: Quantum Computing Applications',
-        location: 'Grand Ballroom',
-        speakers: ['Prof. Hiroshi Tanaka']
+        location: 'RVITM Auditorium',
+        speakers: ['To be announced']
       },
       {
         id: 202,
         time: '10:00 - 10:30',
         title: 'Coffee Break',
-        location: 'Exhibition Hall'
+        location: 'RVITM Auditorium'
       },
       {
         id: 203,
         time: '10:30 - 12:00',
         title: 'Parallel Sessions: Cybersecurity & IoT',
-        location: 'Room A & B'
+        location: 'Seminar Hall'
       },
       {
         id: 204,
@@ -330,8 +299,8 @@ export const conferenceSchedule: Event[] = [
         id: 205,
         time: '13:30 - 15:00',
         title: 'Panel Discussion: Industry 4.0',
-        location: 'Grand Ballroom',
-        speakers: ['Dr. Sarah Johnson', 'Prof. Michael Chen']
+        location: 'RVITM Auditorium',
+        speakers: ['To be announced']
       }
     ]
   }
@@ -342,14 +311,14 @@ export const conferenceInfo = {
   shortTitle: 'ICDTE 2025',
   dates: 'October 16-17, 2025',
   location: 'RV Institute of Technology and Management, Bengaluru',
-  description: 'ICDTE 2025 brings together researchers, practitioners, and industry experts to share cutting-edge research, innovations, and applications in digital technology and engineering.',
+  description: 'ICDTE 2025 brings together Researchers, Practitioners, and Industry Experts to share cutting-edge Research, Innovations, and Applications in Digital Technology and Engineering.',
   email: 'conference.rvitm@rvei.edu.in',
-  phone: '+91 8951758140',
+  phone: '+91 99641 57771',
   venueAddress: 'Chaithanya Layout, 8th Phase, JP Nagar, Bangalore, Karnataka - 560076',
-  organizers: ['IEEE Singapore Section', 'National University of Singapore', 'Singapore Institute of Technology'],
-  sponsors: [
+  partners: [
     {
-      name: 'Springer'
+      name: 'Springer',
+      logo: '/springer.jpg'
     }
   ]
 };
