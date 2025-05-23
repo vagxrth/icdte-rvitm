@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
-            Exploring the frontiers of technology and engineering in the digital age
+            Exploring the Frontiers of Technology and Engineering in the Digital Era.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
@@ -60,18 +60,14 @@ const Hero: React.FC = () => {
               Submit Paper
             </Link>
           </div>
-        </div>
-        
-        <div className="absolute bottom-10 left-0 right-0 animate-bounce flex justify-center">
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={700}
-            className="text-white cursor-pointer"
-          >
-          </Link>
+
+          {/* Publication Partner Section - Centered Below Buttons */}
+          <div className="mt-20 flex flex-col items-center">
+            <span className="uppercase tracking-wider text-sm font-semibold text-white/80 mb-2">Publication Partner</span>
+            <div className="bg-white rounded-lg shadow-md px-6 py-3 flex items-center justify-center">
+              <img src="/springer.jpg" alt="Springer" className="h-12 w-auto" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
