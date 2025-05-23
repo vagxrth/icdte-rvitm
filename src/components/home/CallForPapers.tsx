@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, FileDown } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { tracks } from '../../data/conferenceData';
 
 const CallForPapers: React.FC = () => {
@@ -69,65 +69,6 @@ const CallForPapers: React.FC = () => {
               )}
             </div>
           ))}
-        </div>
-        
-        <div className="mt-16 reveal">
-          <div className="bg-primary-50 dark:bg-primary-900/20 border border-primary-100 dark:border-primary-800 rounded-xl p-8">
-            <h3 className="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-400 text-center">
-              Submission Guidelines
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-2">Paper Format</h4>
-                <ul className="list-disc pl-5 text-gray-600 dark:text-gray-400 space-y-2">
-                  <li>Full papers: 8-10 pages including figures and references</li>
-                  <li>Short papers: 4-6 pages including figures and references</li>
-                  <li>All submissions must be in PDF format</li>
-                  <li>Papers must be written in English</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-2">Review Process</h4>
-                <ul className="list-disc pl-5 text-gray-600 dark:text-gray-400 space-y-2">
-                  <li>Double-blind peer review by at least three reviewers</li>
-                  <li>Evaluated for originality, technical soundness, and relevance</li>
-                  <li>Acceptance notification within 45 days of submission deadline</li>
-                  <li>At least one author must register for the conference</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8">
-              <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-4 text-center">Template Download</h4>
-              <div className="flex justify-center space-x-8">
-                <a 
-                  href="/Word Template.zip" 
-                  download
-                  className="flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
-                >
-                  <FileDown className="w-5 h-5" />
-                  <span>Download paper template (Microsoft Word)</span>
-                </a>
-                <a 
-                  href="/LaTex Template.zip" 
-                  download
-                  className="flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
-                >
-                  <FileDown className="w-5 h-5" />
-                  <span>Download paper template (LaTex)</span>
-                </a>
-              </div>
-            </div>
-            
-            <div className="mt-8 text-center">
-              <a 
-                href="#" 
-                className="btn btn-primary"
-              >
-                Submit Your Paper
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

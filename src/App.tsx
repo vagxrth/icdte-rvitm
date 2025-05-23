@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import Hero from './components/home/Hero';
 import About from './components/home/About';
 import CallForPapers from './components/home/CallForPapers';
+import PaperSubmission from './components/home/PaperSubmission';
 import ImportantDates from './components/home/ImportantDates';
 import Committees from './components/home/Committees';
 import Registration from './components/home/Registration';
@@ -22,6 +23,7 @@ function App() {
             <Hero />
             <About />
             <CallForPapers />
+            <PaperSubmission />
             <ImportantDates />
             <Committees />
             <Registration />

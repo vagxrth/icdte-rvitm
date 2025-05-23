@@ -8,6 +8,7 @@ import { conferenceInfo } from '../../data/conferenceData';
 const navigationItems = [
   { name: 'About', href: 'about' },
   { name: 'Call for Papers', href: 'call-for-papers' },
+  { name: 'Paper Submission', href: 'paper-submission' },
   { name: 'Important Dates', href: 'important-dates' },
   { name: 'Committees', href: 'committees' },
   { name: 'Registration', href: 'registration' },
