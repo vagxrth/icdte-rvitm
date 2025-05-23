@@ -314,7 +314,7 @@ export const conferenceInfo = {
   description: 'ICDTE 2025 brings together Researchers, Practitioners, and Industry Experts to share cutting-edge Research, Innovations, and Applications in Digital Technology and Engineering.',
   email: 'conference.rvitm@rvei.edu.in',
   phone: '+91 99641 57771',
-  venueAddress: 'Chaithanya Layout, 8th Phase, JP Nagar, Bangalore, Karnataka - 560076',
+  venueAddress: ' RV Instittute of Technology and Management, Chaithanya Layout, 8th Phase, JP Nagar, Bangalore, Karnataka - 560076',
   partners: [
     {
       name: 'Springer',

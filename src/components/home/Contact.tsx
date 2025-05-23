@@ -1,137 +1,22 @@
-import React, { useState } from 'react';
-import { Send, Mail, Phone, MapPin } from 'lucide-react';
+import React from 'react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { conferenceInfo } from '../../data/conferenceData';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the form data to your server
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
-    
-    // Show success message (in a real implementation)
-    alert('Message sent successfully!');
-  };
-
   return (
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal">
           <h2 className="section-title">Contact Us</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
-            Have questions about the conference? Contact us directly or use the form below.
+            Have questions about the conference? Contact us directly.
             Our team will get back to you as soon as possible.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="max-w-2xl mx-auto">
           <div className="reveal">
-            <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md h-full">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
-                Send Us a Message
-              </h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Subject
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                    required
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="registration">Registration</option>
-                    <option value="paper">Paper Submission</option>
-                    <option value="sponsorship">Sponsorship</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                    required
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                >
-                  <Send size={18} className="mr-2" />
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-          
-          <div className="reveal" style={{ transitionDelay: '0.2s' }}>
-            <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md h-full">
+            <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
               <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
                 Contact Information
               </h3>
