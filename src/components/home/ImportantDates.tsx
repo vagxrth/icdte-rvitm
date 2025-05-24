@@ -4,11 +4,11 @@ import { importantDates } from '../../data/conferenceData';
 
 const ImportantDates: React.FC = () => {
   return (
-    <section id="important-dates" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="important-dates" className="py-12 bg-gray-50 dark:bg-gray-800">
       <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+        <div className="text-center max-w-3xl mx-auto mb-10 reveal">
           <h2 className="section-title">Important Dates</h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
+          <p className="text-gray-600 dark:text-gray-300 mt-3">
             Mark your calendars with these critical deadlines for the ICDTE 2025 conference.
             All deadlines are end of day Indian Standard Time (IST) time.
           </p>

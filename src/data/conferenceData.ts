@@ -128,25 +128,25 @@ export const importantDates: ImportantDate[] = [
   {
     id: 2,
     title: 'Manuscript Submission Deadline',
-    date: 'July 10, 2025',
+    date: 'August 10, 2025',
     description: 'Last day for submitting manuscripts'
   },
   {
     id: 3,
     title: 'Notification of Acceptance',
-    date: 'July 18, 2025',
+    date: 'August 20, 2025',
     description: 'Notification of acceptance will be sent to authors'
   },
   {
     id: 4,
     title: 'Early Bird Registration Deadline',
-    date: 'August 08, 2025',
+    date: 'August 30, 2025',
     description: 'Last day for early bird registration'
   },
   {
     id: 5,
     title: 'Camera-ready Submission',
-    date: 'September 01, 2025',
+    date: 'September 10, 2025',
     description: 'Deadline for submitting camera-ready papers'
   },
   {
@@ -312,7 +312,7 @@ export const conferenceSchedule: Event[] = [
 
 export const conferenceInfo = {
   title: 'International Conference on Digital Technology and Engineering 2025',
-  shortTitle: 'ICDTE 2025',
+  shortTitle: 'ICDTE2025',
   dates: 'October 16-17, 2025',
   location: 'RV Institute of Technology and Management, Bengaluru',
   description: 'ICDTE 2025 brings together Researchers, Practitioners, and Industry Experts to share cutting-edge Research, Innovations, and Applications in Digital Technology and Engineering.',

@@ -4,11 +4,11 @@ import { speakers } from '../../data/conferenceData';
 
 const Speakers: React.FC = () => {
   return (
-    <section id="speakers" className="py-20 bg-white dark:bg-gray-900">
+    <section id="speakers" className="py-12 bg-white dark:bg-gray-900">
       <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+        <div className="text-center max-w-3xl mx-auto mb-10 reveal">
           <h2 className="section-title">Keynote Speakers</h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
+          <p className="text-gray-600 dark:text-gray-300 mt-3">
             ICDTE 2025 features renowned experts from academia and industry who will share
             their insights on cutting-edge technologies and future trends.
           </p>

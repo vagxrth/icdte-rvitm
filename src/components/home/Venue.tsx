@@ -4,11 +4,11 @@ import { conferenceInfo } from '../../data/conferenceData';
 
 const Venue: React.FC = () => {
   return (
-    <section id="venue" className="py-20 bg-white dark:bg-gray-900">
+    <section id="venue" className="py-12 bg-white dark:bg-gray-900">
       <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+        <div className="text-center max-w-3xl mx-auto mb-10 reveal">
           <h2 className="section-title">Venue</h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
+          <p className="text-gray-600 dark:text-gray-300 mt-3">
             ICDTE 2025 will be held at the prestigious RV Institute of Technology and Management in Bangalore,
             a reputed institution known for its excellence in education and research.
           </p>

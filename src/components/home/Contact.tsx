@@ -4,7 +4,7 @@ import { conferenceInfo } from '../../data/conferenceData';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" className="py-8 bg-gray-50 dark:bg-gray-800">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal">
           <h2 className="section-title">Contact Us</h2>

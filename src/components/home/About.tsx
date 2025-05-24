@@ -4,10 +4,10 @@ import { conferenceInfo } from '../../data/conferenceData';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-12 bg-gray-50 dark:bg-gray-800">
       <div className="section-container">
-        <div className="mb-16 reveal">
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+        <div className="mb-10 reveal">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-2xl font-semibold mb-6 text-primary-600 dark:text-primary-400 text-center">About RSST</h3>
             <p className="text-gray-700 dark:text-gray-300">
               Rashtreeya Sikshana Samithi Trust (RSST), established in 1940, is one of India's most respected educational trusts,
@@ -20,8 +20,8 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="mb-16 reveal">
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+        <div className="mb-10 reveal">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-2xl font-semibold mb-6 text-primary-600 dark:text-primary-400 text-center">About RV Institute of Technology and Management</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -74,8 +74,8 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="mb-16 reveal">
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+        <div className="mb-10 reveal">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-2xl font-semibold mb-6 text-primary-600 dark:text-primary-400 text-center">About The Conference</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
               {conferenceInfo.description}

@@ -3,7 +3,7 @@ import { FileDown } from 'lucide-react';
 
 const PaperSubmission: React.FC = () => {
   return (
-    <section id="paper-submission" className="py-20 bg-white dark:bg-gray-900">
+    <section id="paper-submission" className="py-8 bg-white dark:bg-gray-900">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal">
           <h2 className="section-title">Paper Submission</h2>

@@ -10,11 +10,11 @@ const CallForPapers: React.FC = () => {
   };
 
   return (
-    <section id="call-for-papers" className="py-20 bg-white dark:bg-gray-900">
+    <section id="call-for-papers" className="py-12 bg-white dark:bg-gray-900">
       <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+        <div className="text-center max-w-3xl mx-auto mb-10 reveal">
           <h2 className="section-title">Call for Papers</h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
+          <p className="text-gray-600 dark:text-gray-300 mt-3">
             We invite researchers, academics, and industry professionals to submit original research papers
             on the following tracks and topics. All accepted papers will be published in the conference proceedings
             and selected papers will be recommended for publication in special issues of respected journals.
