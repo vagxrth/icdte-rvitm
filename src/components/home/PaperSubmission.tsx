@@ -16,6 +16,11 @@ const PaperSubmission: React.FC = () => {
           <p className="text-gray-700 dark:text-gray-300 text-lg mb-8">
             Any act of plagiarism is a totally unacceptable academic misconduct and cannot be tolerated. The conference team will be checking the plagiarism level of all the submitted papers for ensuring the originality of content using iThenticate with an acceptable limit of 10%.
           </p>
+          <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-6 mb-8">
+            <p className="text-yellow-800 dark:text-yellow-200 text-lg">
+              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
+          </div>
           <div className="mt-8">
             <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-4 text-center">Template Download</h4>
             <div className="flex justify-center space-x-8">
@@ -43,4 +48,4 @@ const PaperSubmission: React.FC = () => {
   );
 };
 
-export default PaperSubmission; 
+export default PaperSubmission;
