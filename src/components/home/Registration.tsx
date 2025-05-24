@@ -34,7 +34,9 @@ const Registration: React.FC = () => {
                       {type.type} Registration
                     </h3>
                     <div className="flex items-end mb-4">
-                      <span className="text-3xl font-bold text-primary-600 dark:text-primary-400">₹{type.price}</span>
+                      <span className="text-3xl font-bold text-primary-600 dark:text-primary-400">
+                        {type.type === 'Foreign Authors' ? '$' : '₹'}{type.price}
+                      </span>
                     </div>
                     <p className="text-gray-600 dark:text-gray-300 mb-8">
                       {type.description}
