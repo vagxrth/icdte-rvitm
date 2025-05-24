@@ -16,9 +16,9 @@ const Registration: React.FC = () => {
         {/* Registration Cards Scroll Area */}
         <div className="relative py-6 overflow-visible">
           {/* Left Fade */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-8 z-0 bg-gradient-to-r from-gray-50 dark:from-gray-800 to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-8 z-0 bg-gradient-to-r from-gray-50 dark:from-gray-800 to-transparent backdrop-blur-md" />
           {/* Right Fade */}
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-8 z-0 bg-gradient-to-l from-gray-50 dark:from-gray-800 to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-8 z-0 bg-gradient-to-l from-gray-50 dark:from-gray-800 to-transparent backdrop-blur-md" />
 
           <div className="flex gap-8 overflow-x-auto pb-4 px-2 md:px-8 scrollbar-hide snap-x snap-mandatory overflow-visible"
             style={{scrollbarWidth: 'none'}}>
