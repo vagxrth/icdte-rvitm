@@ -19,14 +19,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       if (savedTheme) {
         return savedTheme;
       }
-      
-      // Otherwise check user's system preference
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-      }
     }
     
-    return 'light';
+    // Default to dark mode
+    return 'dark';
   });
 
   useEffect(() => {
