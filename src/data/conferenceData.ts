@@ -166,31 +166,20 @@ export const importantDates: ImportantDate[] = [
 export const registrationTypes: RegistrationType[] = [
   {
     id: 1,
-    type: 'Under Graduate Students ',
-    price: 3500,
-    description: 'For Under Graduate Students',
-    features: [
-      'Access to all sessions',
-      'Conference materials',
-      'Coffee breaks',
-      'Student networking event'
-    ]
-  },
-  {
-    id: 2,
-    type: 'Post Graduate Students',
+    type: 'Students',
     price: 4000,
-    description: 'For Post Graduate Students',
+    description: 'For Undergraduate and Post Graduate Students',
     features: [
       'Access to all sessions',
       'Conference materials',
       'Coffee breaks and lunches',
       'Welcome reception',
-      'Gala dinner'
+      'Gala dinner',
+      'Student networking event'
     ]
   },
   {
-    id: 3,
+    id: 2,
     type: 'Academicians',
     price: 4500,
     description: 'For Academicians',
@@ -204,7 +193,7 @@ export const registrationTypes: RegistrationType[] = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     type: 'Industry Delegates',
     price: 5000,
     description: 'For Industry Delegates',
@@ -215,6 +204,21 @@ export const registrationTypes: RegistrationType[] = [
       'Welcome reception',
       'Gala dinner',
       'Industry networking event'
+    ]
+  },
+  {
+    id: 4,
+    type: 'Foreign Authors',
+    price: 80,
+    description: 'For International Participants',
+    features: [
+      'Access to all sessions',
+      'Conference materials',
+      'Coffee breaks and lunches',
+      'Welcome reception',
+      'Gala dinner',
+      'International networking opportunities',
+      'Special cultural events'
     ]
   }
 ];
