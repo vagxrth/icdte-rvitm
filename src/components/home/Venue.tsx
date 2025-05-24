@@ -60,7 +60,7 @@ const Venue: React.FC = () => {
                 <div className="flex">
                   <Globe className="w-5 h-5 text-gray-500 dark:text-gray-400 mr-3 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="text-gray-800 dark:text-gray-200">www.icdte2025.org</p>
+                    <p className="text-gray-800 dark:text-gray-200">icdte2025.netlify.app</p>
                   </div>
                 </div>
               </div>
