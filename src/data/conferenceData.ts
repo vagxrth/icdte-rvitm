@@ -16,7 +16,7 @@ export const tracks: Track[] = [
   },
   {
     id: 2,
-    title: 'Internet of Things (IoT) and Cyber-Physical Systems',
+    title: 'Internet of Things (IoT) and Cyber-Physical Systems and Wireless Communication Networks',
     description: 'Innovative solutions in IoT architectures and cyber-physical system integration',
     topics: [
       'Smart Sensors and Actuators in IoT',
