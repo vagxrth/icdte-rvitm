@@ -48,6 +48,10 @@ const Hero: React.FC = () => {
             Exploring the Frontiers of Technology and Engineering in the Digital Era.
           </p>
           
+          <p className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto mb-8">
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+          </p>
+
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <Link
               to="registration"
@@ -72,7 +76,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Publication Partner Section - Centered Below Buttons */}
-          <div className="mt-20 flex flex-col items-center">
+          <div className="mt-8 flex flex-col items-center">
             <span className="uppercase tracking-wider text-sm font-semibold text-white/80 mb-2">Publication Partner</span>
             <div className="bg-white rounded-lg shadow-md px-6 py-3 flex items-center justify-center">
               <img src="/springer.jpg" alt="Springer" className="h-12 w-auto" />
