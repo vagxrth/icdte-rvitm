@@ -18,11 +18,9 @@ const PaperSubmission: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-xl p-8 max-w-6xl mx-auto mb-8">
-          <p className="text-yellow-800 dark:text-yellow-200 text-lg text-justify">
-            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-          </p>
-        </div>
+        <p className="text-gray-700 dark:text-gray-300 text-lg text-justify max-w-6xl mx-auto mb-8">
+          The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+        </p>
 
         <div className="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-6xl mx-auto">
           <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-4 text-center">Template Download</h4>
