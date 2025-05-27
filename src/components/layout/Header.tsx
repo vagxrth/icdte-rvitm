@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 import { useScroll } from '../../context/ScrollContext';
 import { conferenceInfo } from '../../data/conferenceData';
+import NavLink from '../navigation/NavLink';
+import { Link } from 'react-router-dom';
 
 const navigationItems = [
   { name: 'About', href: 'about' },
@@ -52,11 +53,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+              to="/"
               className="cursor-pointer"
             >
               <div className="flex items-center space-x-2">
@@ -68,13 +65,9 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
             {navigationItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.name}
                 to={item.href}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
                 className={`px-3 py-2 text-sm font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   activeSection === item.href
                     ? 'text-primary-600 dark:text-primary-400'
@@ -82,7 +75,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
             <button
               onClick={toggleTheme}
@@ -118,11 +111,7 @@ const Header: React.FC = () => {
         <div className="fixed inset-0 z-50 bg-white dark:bg-gray-900 overflow-y-auto">
           <div className="flex justify-between items-center p-4">
             <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+              to="/"
               onClick={closeMenu}
               className="cursor-pointer"
             >
@@ -138,13 +127,9 @@ const Header: React.FC = () => {
           </div>
           <nav className="flex flex-col p-4 space-y-4">
             {navigationItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.name}
                 to={item.href}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
                 onClick={closeMenu}
                 className={`px-4 py-3 text-lg font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   activeSection === item.href
@@ -153,7 +138,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
           </nav>
         </div>

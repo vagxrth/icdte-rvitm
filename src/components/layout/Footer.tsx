@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Youtube, Instagram } from 'lucide-react';
 import { conferenceInfo } from '../../data/conferenceData';
+import NavLink from '../navigation/NavLink';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -39,52 +39,36 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4 text-primary-400">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link
+                <NavLink
                   to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
                   className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
                 >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="call-for-papers"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
                   className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
                 >
                   Call for Papers
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="important-dates"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
                   className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
                 >
                   Important Dates
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="registration"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
                   className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
                 >
                   Registration
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

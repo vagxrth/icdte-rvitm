@@ -19,6 +19,16 @@ const Hero: React.FC = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div className="animate-zoom-in">
+          {/* Institution Logos */}
+          <div className="flex justify-between items-center mb-8">
+            <div className=" backdrop-blur-sm rounded-lg p-3">
+              <img src="/rvitm-logo.png" alt="RVITM" className="h-20 w-auto" />
+            </div>
+            <div className="backdrop-blur-sm rounded-lg p-3">
+              <img src="/vtu-logo.png" alt="VTU" className="h-20 w-auto" />
+            </div>
+          </div>
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
             <span className="block">{conferenceInfo.shortTitle}</span>
             <span className="block text-2xl sm:text-3xl md:text-4xl mt-2 text-primary-300 font-normal tracking-wider">
