@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               <NavLink
                 key={item.name}
                 to={item.href}
-                className={`px-3 py-2 text-sm font-medium rounded-md cursor-pointer transition-colors duration-300 ${
+                className={`px-3 py-2 text-base md:text-lg font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   activeSection === item.href
                     ? 'text-primary-600 dark:text-primary-400'
                     : 'text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400'
@@ -131,7 +131,7 @@ const Header: React.FC = () => {
                 key={item.name}
                 to={item.href}
                 onClick={closeMenu}
-                className={`px-4 py-3 text-lg font-medium rounded-md cursor-pointer transition-colors duration-300 ${
+                className={`px-4 py-3 text-xl font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   activeSection === item.href
                     ? 'bg-primary-50 text-primary-600 dark:bg-primary-900/20 dark:text-primary-400'
                     : 'text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800'
