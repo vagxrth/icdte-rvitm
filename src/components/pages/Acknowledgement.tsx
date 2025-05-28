@@ -22,9 +22,9 @@ const Acknowledgement: React.FC = () => {
           The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
         </p>
 
-        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto mb-8">
-          I acknowledge that I have read and agree to abide by the Microsoft CMT terms of use and privacy policy.
-        </p>
+        <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto mb-8">
+          <text>I acknowledge that I have read and agree to abide by the Microsoft CMT terms of use and privacy policy.</text>
+        </div>
 
         <div className="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-4xl mx-auto shadow-lg">
           <h4 className="text-2xl font-medium text-gray-800 dark:text-gray-200 mb-6 text-center">Template Download</h4>
