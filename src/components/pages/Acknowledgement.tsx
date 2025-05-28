@@ -18,9 +18,9 @@ const Acknowledgement: React.FC = () => {
           </p>
         </div>
 
-        <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto mb-8">
-          The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-        </p>
+        <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto mb-8">
+          <text>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</text>
+        </div>
 
         <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto mb-8">
           <text>I acknowledge that I have read and agree to abide by the Microsoft CMT terms of use and privacy policy.</text>
