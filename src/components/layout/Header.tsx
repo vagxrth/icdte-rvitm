@@ -13,6 +13,7 @@ const navigationItems = [
   { name: 'Committees', href: 'committees' },
   { name: 'Registration', href: 'registration' },
   { name: 'Schedule', href: 'schedule' },
+  { name: 'Acknowledgement', href: 'acknowledgement' },
   { name: 'Venue', href: 'venue' },
   { name: 'Contact', href: 'contact' },
 ];
@@ -31,7 +32,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-2">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
@@ -46,12 +47,12 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="hidden md:flex items-center space-x-0.5">
             {navigationItems.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.href}
-                className={`px-3 py-2 text-base md:text-lg font-medium rounded-md cursor-pointer transition-colors duration-300 ${
+                className={`px-2 py-2 text-base font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   isActive(item.href)
                     ? 'text-primary-600 dark:text-primary-400'
                     : 'text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400'

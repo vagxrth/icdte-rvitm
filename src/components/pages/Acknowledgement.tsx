@@ -3,10 +3,10 @@ import { FileDown } from 'lucide-react';
 
 const Acknowledgement: React.FC = () => {
   return (
-    <section id="acknowledgement" className="py-8 bg-white dark:bg-gray-900 min-h-screen pt-24">
+    <section id="acknowledgement" className="py-8 bg-white dark:bg-gray-800 min-h-screen pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 reveal">
-          <h2 className="section-title text-4xl font-bold text-gray-900 dark:text-white mb-4">Acknowledgement</h2>
+          <h2 className="section-title">Acknowledgement</h2>
         </div>
         <div className="bg-primary-50 dark:bg-primary-900/20 border border-primary-100 dark:border-primary-800 rounded-xl p-8 max-w-4xl mx-auto mb-8 shadow-lg">
           <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed text-justify">
