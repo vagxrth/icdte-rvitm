@@ -64,7 +64,7 @@ const Committees: React.FC = () => {
 
         {/* Chief Patron */}
         <div className="mb-12">
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md max-w-md mx-auto">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md max-w-md mx-auto">
             <div className="text-center">
               <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
@@ -77,11 +77,11 @@ const Committees: React.FC = () => {
         </div>
 
         {/* Patrons Section */}
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mb-12">
+        <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md mb-12">
           <h3 className="text-2xl font-semibold text-center text-primary-600 dark:text-primary-400 mb-8">Patrons</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {executiveCommittee.patrons.map((patron, index) => (
-              <div key={index} className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm">
+              <div key={index} className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg">
                 <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{patron.name}</h4>
                 <p className="text-gray-600 dark:text-gray-300">{patron.title}</p>
               </div>
@@ -92,7 +92,7 @@ const Committees: React.FC = () => {
         {/* General Chair & General Co-Chair Side by Side */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* General Chair */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md max-w-md w-full mx-auto">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
             <div className="text-center">
               <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
@@ -104,7 +104,7 @@ const Committees: React.FC = () => {
           </div>
 
           {/* General Co-Chair */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md max-w-md w-full mx-auto">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
             <div className="text-center">
               <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
@@ -119,28 +119,28 @@ const Committees: React.FC = () => {
         {/* Other Chairs Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Organizing Chair */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Organizing Chair</h3>
             <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.organizingChair.name}</h4>
             <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.organizingChair.title}</p>
           </div>
 
           {/* Technical Program Chair */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Technical Program Chair</h3>
             <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.technicalProgramChair.name}</h4>
             <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.technicalProgramChair.title}</p>
           </div>
 
           {/* Publication Chair */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Publication Chair</h3>
             <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.publicationChair.name}</h4>
             <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.publicationChair.title}</p>
           </div>
 
           {/* Finance Chair */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Finance Chair</h3>
             <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.financeChair.name}</h4>
             <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.financeChair.title}</p>
