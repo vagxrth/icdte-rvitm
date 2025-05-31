@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { conferenceInfo } from '../../data/conferenceData';
 
 const Hero: React.FC = () => {
@@ -55,20 +55,12 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <Link
               to="registration"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={700}
               className="btn btn-primary text-base md:text-lg px-8 py-3"
             >
               Register Now
             </Link>
             <Link
               to="call-for-papers"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={700}
               className="btn btn-outline text-white border-white hover:bg-white/10 text-base md:text-lg px-8 py-3"
             >
               Submit Paper
@@ -76,7 +68,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Publication Partner Section - Centered Below Buttons */}
-          <div className="mt-8 flex flex-col items-center">
+          <div className="mt-6 flex flex-col items-center">
             <span className="uppercase tracking-wider text-sm font-semibold text-white/80 mb-2">Publication Partner</span>
             <div className="bg-white rounded-lg shadow-md px-6 py-3 flex items-center justify-center">
               <img src="/springer.jpg" alt="Springer" className="h-12 w-auto" />
