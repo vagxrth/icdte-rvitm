@@ -4,7 +4,7 @@ import { conferenceInfo } from '../../data/conferenceData';
 
 const Venue: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-gray-50 dark:bg-gray-800">
       <div className="section-container page-padding">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title">Venue</h2>
