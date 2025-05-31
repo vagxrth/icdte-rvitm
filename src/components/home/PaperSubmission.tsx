@@ -3,9 +3,9 @@ import { FileDown } from 'lucide-react';
 
 const PaperSubmission: React.FC = () => {
   return (
-    <section id="paper-submission" className="py-8 bg-white dark:bg-gray-900">
-      <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+    <section className="bg-white dark:bg-gray-900">
+      <div className="section-container page-padding">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title">Paper Submission</h2>
         </div>
         <div className="bg-primary-50 dark:bg-primary-900/20 border border-primary-100 dark:border-primary-800 rounded-xl p-8 max-w-6xl mx-auto mb-8">

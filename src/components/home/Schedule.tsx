@@ -7,9 +7,9 @@ const Schedule: React.FC = () => {
   const selectedDay = conferenceSchedule.find(day => day.id === activeDay) || conferenceSchedule[0];
   
   return (
-    <section id="schedule" className="py-8 bg-gray-50 dark:bg-gray-800">
-      <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+    <section className="bg-gray-50 dark:bg-gray-800">
+      <div className="section-container page-padding">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title">Conference Schedule</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
             Explore our program of keynotes, paper presentations, panel discussions, and networking events.
@@ -17,7 +17,7 @@ const Schedule: React.FC = () => {
           </p>
         </div>
         
-        <div className="mb-8 reveal">
+        <div className="mb-8">
           <div className="flex flex-wrap justify-center gap-4">
             {conferenceSchedule.map((day) => (
               <button
@@ -36,7 +36,7 @@ const Schedule: React.FC = () => {
           </div>
         </div>
         
-        <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden reveal">
+        <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden">
           <div className="p-6 sm:p-8">
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               {selectedDay.day} - {selectedDay.date}
@@ -78,7 +78,7 @@ const Schedule: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-8 text-center reveal">
+        <div className="mt-8 text-center">
           <a href="#" className="btn btn-outline">
             Download Full Schedule
           </a>

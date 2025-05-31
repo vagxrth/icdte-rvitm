@@ -3,9 +3,9 @@ import { registrationTypes } from '../../data/conferenceData';
 
 const Registration: React.FC = () => {
   return (
-    <section id="registration" className="py-20 bg-gray-50 dark:bg-gray-800 overflow-visible">
-      <div className="section-container overflow-visible py-10">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+    <section className="bg-gray-50 dark:bg-gray-800 overflow-visible">
+      <div className="section-container page-padding overflow-visible">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title">Registration</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
             Join us at ICDTE 2025 by registering for the conference. Early bird registration
@@ -22,11 +22,10 @@ const Registration: React.FC = () => {
 
           <div className="flex gap-8 overflow-x-auto pb-4 px-2 md:px-8 scrollbar-hide snap-x snap-mandatory overflow-visible"
             style={{scrollbarWidth: 'none'}}>
-            {registrationTypes.map((type, index) => (
+            {registrationTypes.map((type) => (
               <div
                 key={type.id}
-                className="reveal min-w-[320px] max-w-[370px] w-full snap-center my-8 overflow-visible"
-                style={{ transitionDelay: `${index * 0.1}s` }}
+                className="min-w-[320px] max-w-[370px] w-full snap-center my-8 overflow-visible"
               >
                 <div className="relative h-full bg-white dark:bg-gray-700 rounded-2xl overflow-visible shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col border border-gray-200 dark:border-gray-600 hover:scale-105 hover:-translate-y-1 z-20 hover:z-40">
                   <div className="p-8 flex-grow flex flex-col justify-between">
@@ -55,7 +54,7 @@ const Registration: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-16 max-w-4xl mx-auto reveal">
+        <div className="mt-16 max-w-4xl mx-auto">
           <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
             <h3 className="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-white">
               Registration Process

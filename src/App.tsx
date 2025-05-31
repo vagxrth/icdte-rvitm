@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
-import { ScrollProvider } from './context/ScrollContext';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Hero from './components/home/Hero';
@@ -15,37 +14,29 @@ import Venue from './components/home/Venue';
 import Contact from './components/home/Contact';
 import Acknowledgement from './components/pages/Acknowledgement';
 
-const HomePage = () => (
-  <>
-    <Hero />
-    <About />
-    <CallForPapers />
-    <PaperSubmission />
-    <ImportantDates />
-    <Committees />
-    <Registration />
-    <Schedule />
-    <Venue />
-    <Contact />
-  </>
-);
-
 function App() {
   return (
     <Router>
       <ThemeProvider>
-        <ScrollProvider>
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            <main>
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/acknowledgement" element={<Acknowledgement />} />
-              </Routes>
-            </main>
-            <Footer />
-          </div>
-        </ScrollProvider>
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Hero />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/call-for-papers" element={<CallForPapers />} />
+              <Route path="/paper-submission" element={<PaperSubmission />} />
+              <Route path="/important-dates" element={<ImportantDates />} />
+              <Route path="/committees" element={<Committees />} />
+              <Route path="/registration" element={<Registration />} />
+              <Route path="/schedule" element={<Schedule />} />
+              <Route path="/venue" element={<Venue />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/acknowledgement" element={<Acknowledgement />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </ThemeProvider>
     </Router>
   );

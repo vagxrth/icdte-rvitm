@@ -3,6 +3,13 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Youtube, Instagram } 
 import { conferenceInfo } from '../../data/conferenceData';
 import NavLink from '../navigation/NavLink';
 
+const quickLinks = [
+  { name: 'About', href: 'about' },
+  { name: 'Call for Papers', href: 'call-for-papers' },
+  { name: 'Important Dates', href: 'important-dates' },
+  { name: 'Registration', href: 'registration' },
+];
+
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
@@ -38,38 +45,16 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-primary-400">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <NavLink
-                  to="about"
-                  className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
-                >
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="call-for-papers"
-                  className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
-                >
-                  Call for Papers
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="important-dates"
-                  className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
-                >
-                  Important Dates
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="registration"
-                  className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
-                >
-                  Registration
-                </NavLink>
-              </li>
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <NavLink
+                    to={link.href}
+                    className="text-gray-300 hover:text-primary-400 transition-colors cursor-pointer"
+                  >
+                    {link.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
           

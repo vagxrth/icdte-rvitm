@@ -10,11 +10,11 @@ const CallForPapers: React.FC = () => {
   };
 
   return (
-    <section id="call-for-papers" className="py-12 bg-white dark:bg-gray-900">
-      <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-10 reveal">
+    <section className="bg-white dark:bg-gray-900">
+      <div className="section-container page-padding">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title">Call for Papers</h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-3">
+          <p className="text-gray-600 dark:text-gray-300 mt-4">
             We invite researchers, academics, and industry professionals to submit original research papers
             on the following tracks and topics. All accepted papers will be published in the conference proceedings
             and selected papers will be recommended for publication in special issues of respected journals.
@@ -25,7 +25,7 @@ const CallForPapers: React.FC = () => {
           {tracks.map((track) => (
             <div 
               key={track.id}
-              className="reveal bg-gradient-to-r from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-xl overflow-hidden transition-all duration-300"
+              className="bg-gradient-to-r from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-xl overflow-hidden transition-all duration-300"
             >
               <button
                 onClick={() => toggleTrack(track.id)}
@@ -47,22 +47,13 @@ const CallForPapers: React.FC = () => {
               </button>
               
               {expandedTrack === track.id && (
-                <div className="px-6 pb-6">
+                <div className="px-6 pb-4">
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {track.description}
                   </p>
-                  <h4 className="font-medium text-gray-900 dark:text-white mb-2">
-                    Research Areas:
-                  </h4>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
                     {track.topics.map((topic, index) => (
-                      <li 
-                        key={index}
-                        className="flex items-center text-gray-600 dark:text-gray-300"
-                      >
-                        <span className="w-2 h-2 bg-primary-400 rounded-full mr-2"></span>
-                        {topic}
-                      </li>
+                      <li key={index}>{topic}</li>
                     ))}
                   </ul>
                 </div>

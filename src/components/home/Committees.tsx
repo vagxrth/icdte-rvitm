@@ -53,9 +53,9 @@ const Committees: React.FC = () => {
   };
 
   return (
-    <section id="committees" className="py-20 bg-white dark:bg-gray-900">
-      <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+    <section className="bg-white dark:bg-gray-900">
+      <div className="section-container page-padding">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title">Executive Committee and Patrons</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
             Meet our distinguished committee members and patrons leading ICDTE 2025.
@@ -63,7 +63,7 @@ const Committees: React.FC = () => {
         </div>
 
         {/* Chief Patron */}
-        <div className="mb-12 reveal">
+        <div className="mb-12">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md max-w-md mx-auto">
             <div className="text-center">
               <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -77,7 +77,7 @@ const Committees: React.FC = () => {
         </div>
 
         {/* Patrons Section */}
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mb-12 reveal">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mb-12">
           <h3 className="text-2xl font-semibold text-center text-primary-600 dark:text-primary-400 mb-8">Patrons</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {executiveCommittee.patrons.map((patron, index) => (
@@ -90,7 +90,7 @@ const Committees: React.FC = () => {
         </div>
 
         {/* General Chair & General Co-Chair Side by Side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 reveal">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* General Chair */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md max-w-md w-full mx-auto">
             <div className="text-center">
@@ -117,7 +117,7 @@ const Committees: React.FC = () => {
         </div>
 
         {/* Other Chairs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Organizing Chair */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
             <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Organizing Chair</h3>

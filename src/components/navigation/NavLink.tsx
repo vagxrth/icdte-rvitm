@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 
 interface NavLinkProps {
   to: string;
@@ -10,28 +9,9 @@ interface NavLinkProps {
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ to, children, className = '', onClick }) => {
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
-
-  if (isHomePage) {
-    return (
-      <ScrollLink
-        to={to}
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-        className={`cursor-pointer ${className}`}
-        onClick={onClick}
-      >
-        {children}
-      </ScrollLink>
-    );
-  }
-
   return (
     <RouterLink
-      to={`/#${to}`}
+      to={`/${to}`}
       className={className}
       onClick={onClick}
     >
