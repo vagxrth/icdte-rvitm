@@ -4,8 +4,15 @@ import { conferenceInfo } from '../../data/conferenceData';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-12 bg-gray-50 dark:bg-gray-800">
-      <div className="section-container">
+    <section id="about" className="bg-gray-50 dark:bg-gray-800">
+      <div className="section-container page-padding">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="section-title">About</h2>
+          <p className="text-gray-600 dark:text-gray-300 mt-4">
+            Learn more about RSST, RVITM, and the International Conference on Digital Technology and Engineering.
+          </p>
+        </div>
+
         <div className="mb-10 reveal">
           <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
             <h3 className="text-2xl font-semibold mb-6 text-primary-600 dark:text-primary-400 text-center">About RSST</h3>
