@@ -152,7 +152,42 @@ const Committees: React.FC = () => {
         },
       ],
       ise: [
-        
+        {
+          name: 'Dr. Vinoth Kumar M',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. Niharika P Kumar',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. Shruthi P',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Samatha R Swamy',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr. Girish Kumar B C',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr. Krupesha D',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Nisha Wilvicta J',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Namrata Brahamaprakash',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Pallavi K N',
+          title: 'Assistant Professor'
+        },
       ],
       ece: [
         {
