@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
               Register Now
             </Link>
             <Link
-              to="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=/"
+              to="https://cmt3.research.microsoft.com/ICDTE2025"
               target="_blank"
               className="btn btn-outline text-white border-white hover:bg-white/10 text-base md:text-lg px-8 py-3"
             >
