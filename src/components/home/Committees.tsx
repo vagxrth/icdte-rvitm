@@ -18,11 +18,11 @@ const Committees: React.FC = () => {
         title: 'Hon. Joint Secretary, RSST'
       },
       {
-        name: 'Sri. P.S. Venkatesh Babu',
+        name: 'Sri. P.S Venkatesh Babu',
         title: 'Hon. Treasurer, RSST'
       },
       {
-        name: 'Sri. B.R Vishwanath Setty',
+        name: 'Sri. P.S Nanda Kumar',
         title: 'Governing Council Chairman, RVITM'
       }
     ],
