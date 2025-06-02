@@ -4,6 +4,8 @@ import { FileDown } from 'lucide-react';
 const Acknowledgement: React.FC = () => {
   return (
     <section id="acknowledgement" className="py-8 bg-white dark:bg-gray-800 min-h-screen pt-24">
+      <link rel="alternate" type="text/html" href="/acknowledgement.html" />
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 reveal">
           <h2 className="section-title">Acknowledgement</h2>
