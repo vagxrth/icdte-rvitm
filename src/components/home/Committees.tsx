@@ -191,39 +191,171 @@ const Committees: React.FC = () => {
       ],
       ece: [
         {
-          name: 'Dr. M.P. Shyam',
-          title: 'President, RSST, Bengaluru'
-        }
+          name: 'Dr. Prashant P P ',
+          title: 'Professor'
+        },
+        {
+          name: 'Dr. Nataraj V',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. Madhumathy P',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. Chethan K S',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Shalini Shravan',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Kavitha. N',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Hareesh Kumar ',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Venu Gopal B T',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Vikash Kumar',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr. Nagesh M',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Divyashree M',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Nivedita S Desai',
+          title: 'Assistant Professor'
+        },
       ],
       me: [
         {
-          name: 'Dr. M.P. Shyam',
-          title: 'President, RSST, Bengaluru'
-        }
+          name: 'Dr. Raghavendra Reddy N V',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr.Durgaprasad C ',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr.Lokesh P',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Gajanan M Naik',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Shanthala K',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Manish Kumar',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr.Thejas C M',
+          title: 'Assistant Professor'
+        },  
       ],
       mca: [
         {
-          name: 'Dr. M.P. Shyam',
-          title: 'President, RSST, Bengaluru'
-        }
+          name: 'Dr. Chethan Venkatesh',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. N. Kumaresh',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. Neetha S S',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. R. Saravanan',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr. Jayaramu M',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Shruthi M G',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr. Tamal Sarkar',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Sowmya V',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Ms. Shreya Khodanpur',
+          title: 'Assistant Professor'
+        },
       ],
       physics: [
         {
-          name: 'Dr. M.P. Shyam',
-          title: 'President, RSST, Bengaluru'
+          name: 'Dr. S. Satyanarayana Reddy',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Yashwanth Venkatraman Naik',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr.Sunil Kumar L',
+          title: 'Assistant Instructor- Phy Lab'
         }
       ],
       mathematics: [
         {
-          name: 'Dr. M.P. Shyam',
-          title: 'President, RSST, Bengaluru'
-        }
+          name: 'Dr.Sivasankar S',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Nagabhushana Pulla',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Sushma M Puranik',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. David A Kalakop',
+          title: 'Assistant Professor'
+        },
       ],
       chemistry: [  
         {
-          name: 'Dr. M.P. Shyam',
-          title: 'President, RSST, Bengaluru'
-        }
+          name: 'Dr.Samrat D',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. B E Prasad',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mr.Channappa M C',
+          title: 'Assistant Instructor- Chem Lab'
+        },
+        {
+          name: 'Mrs. Ramya T',
+          title: 'Attender'
+        },
       ]
     }
   };
