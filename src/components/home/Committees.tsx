@@ -75,7 +75,122 @@ const Committees: React.FC = () => {
         name: 'Dr. M. Mrunalini',
         title: 'Prof. & HoD MCA'
       }
-    ]
+    ],
+    organizingCommittee: {
+      cse: [
+        {
+          name: 'Dr.Anitha J',
+          title: 'Professor'
+        },
+        {
+          name: 'Dr. Hema M S',
+          title: 'Professor'
+        },
+        {
+          name: 'Dr Shrishail Math',
+          title: 'Professor'
+        },
+        {
+          name: 'Mr. Sudheendra B S',
+          title: 'Professor of Practice'
+        },
+        {
+          name: 'Dr. Mallanagouda Patil',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. Surbhi Agrawal',
+          title: 'Associate Professor'
+        },
+        {
+          name: 'Dr. Roopashree S',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Shashidhar Virupaksha',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr. Anil Kumar B',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Srividhya V R',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Dr Nandita Bangera',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Rachana M S',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Syeda Ayesha Unisa',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Padmasree.N',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Prabhavathi K',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Uppin Rashmi',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Bhavya N Javagal',
+          title: 'Assistant Professor'
+        },
+        {
+          name: 'Mrs. Shridevi A Desai',
+          title: 'Assistant Professor'
+        },
+      ],
+      ise: [
+        
+      ],
+      ece: [
+        {
+          name: 'Dr. M.P. Shyam',
+          title: 'President, RSST, Bengaluru'
+        }
+      ],
+      me: [
+        {
+          name: 'Dr. M.P. Shyam',
+          title: 'President, RSST, Bengaluru'
+        }
+      ],
+      mca: [
+        {
+          name: 'Dr. M.P. Shyam',
+          title: 'President, RSST, Bengaluru'
+        }
+      ],
+      physics: [
+        {
+          name: 'Dr. M.P. Shyam',
+          title: 'President, RSST, Bengaluru'
+        }
+      ],
+      mathematics: [
+        {
+          name: 'Dr. M.P. Shyam',
+          title: 'President, RSST, Bengaluru'
+        }
+      ],
+      chemistry: [  
+        {
+          name: 'Dr. M.P. Shyam',
+          title: 'President, RSST, Bengaluru'
+        }
+      ]
+    }
   };
 
   return (
