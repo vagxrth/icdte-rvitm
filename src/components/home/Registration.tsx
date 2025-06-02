@@ -1,7 +1,43 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { registrationTypes } from '../../data/conferenceData';
 
 const Registration: React.FC = () => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [scrollWidth, setScrollWidth] = useState(0);
+
+  useEffect(() => {
+    const updateScrollInfo = () => {
+      if (scrollContainerRef.current) {
+        const { scrollWidth, clientWidth, scrollLeft } = scrollContainerRef.current;
+        const maxScroll = scrollWidth - clientWidth;
+        setScrollWidth((scrollLeft / maxScroll) * 100);
+      }
+    };
+
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.addEventListener('scroll', updateScrollInfo);
+      // Initial update
+      updateScrollInfo();
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener('scroll', updateScrollInfo);
+      }
+    };
+  }, []);
+
+  const handleScrollbarClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (scrollContainerRef.current) {
+      const scrollbar = e.currentTarget;
+      const rect = scrollbar.getBoundingClientRect();
+      const ratio = (e.clientX - rect.left) / rect.width;
+      const maxScroll = scrollContainerRef.current.scrollWidth - scrollContainerRef.current.clientWidth;
+      scrollContainerRef.current.scrollLeft = ratio * maxScroll;
+    }
+  };
+
   return (
     <section className="bg-gray-50 dark:bg-gray-800 overflow-visible">
       <div className="section-container page-padding overflow-visible">
@@ -20,7 +56,9 @@ const Registration: React.FC = () => {
           {/* Right Fade */}
           <div className="pointer-events-none absolute right-0 top-0 h-full w-8 z-0 bg-gradient-to-l from-gray-50 dark:from-gray-800 to-transparent backdrop-blur-md" />
 
-          <div className="flex gap-8 overflow-x-auto pb-4 px-2 md:px-8 scrollbar-hide snap-x snap-mandatory overflow-visible"
+          <div 
+            ref={scrollContainerRef}
+            className="flex gap-8 overflow-x-auto pb-4 px-2 md:px-8 snap-x snap-mandatory overflow-visible scroll-smooth"
             style={{scrollbarWidth: 'none'}}>
             {registrationTypes.map((type) => (
               <div
@@ -51,6 +89,17 @@ const Registration: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Custom Scrollbar */}
+          <div 
+            className="mx-auto mt-4 h-2 bg-gray-200 dark:bg-gray-600 rounded-full overflow-hidden cursor-pointer max-w-[calc(100%-4rem)]"
+            onClick={handleScrollbarClick}
+          >
+            <div 
+              className="h-full bg-primary-500 rounded-full transition-all duration-150"
+              style={{ width: `${scrollWidth}%` }}
+            />
           </div>
         </div>
         
