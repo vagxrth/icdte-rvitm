@@ -19,7 +19,7 @@ const Acknowledgement: React.FC = () => {
         </div>
 
         <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto mb-8">
-          <text>The <a className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=/">Microsoft CMT service</a> was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</text>
+          <text>The <a className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors" target="_blank" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=/">Microsoft CMT service</a> was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</text>
         </div>
 
         <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-justify max-w-4xl mx-auto mb-8">
