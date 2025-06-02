@@ -60,7 +60,8 @@ const Hero: React.FC = () => {
               Register Now
             </Link>
             <Link
-              to="call-for-papers"
+              to="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=/"
+              target="_blank"
               className="btn btn-outline text-white border-white hover:bg-white/10 text-base md:text-lg px-8 py-3"
             >
               Submit Paper
