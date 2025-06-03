@@ -31,7 +31,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-2">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-2 2xl:py-4">
       <div className="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -41,18 +41,18 @@ const Header: React.FC = () => {
               className="cursor-pointer"
             >
               <div className="flex items-center space-x-2">
-                <span className="text-lg md:text-xl font-bold gradient-text">{conferenceInfo.shortTitle}</span>
+                <span className="text-lg md:text-xl 2xl:text-3xl font-bold gradient-text">{conferenceInfo.shortTitle}</span>
               </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-2">
+          <nav className="hidden md:flex items-center space-x-2 2xl:space-x-6">
             {navigationItems.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.href}
-                className={`px-2.5 py-2 text-sm lg:text-base font-medium rounded-md cursor-pointer transition-colors duration-300 ${
+                className={`px-2.5 py-2 2xl:px-4 2xl:py-3 text-sm lg:text-base 2xl:text-lg font-medium rounded-md cursor-pointer transition-colors duration-300 ${
                   isActive(item.href)
                     ? 'text-primary-600 dark:text-primary-400'
                     : 'text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400'
@@ -63,10 +63,10 @@ const Header: React.FC = () => {
             ))}
             <button
               onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 focus:outline-none"
+              className="ml-4 p-2 2xl:p-3 rounded-full text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 focus:outline-none"
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
-              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+              {theme === 'light' ? <Moon size={20} className="2xl:w-7 2xl:h-7" /> : <Sun size={20} className="2xl:w-7 2xl:h-7" />}
             </button>
           </nav>
 

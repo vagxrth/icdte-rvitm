@@ -22,10 +22,10 @@ const Hero: React.FC = () => {
           {/* Institution Logos */}
           <div className="flex justify-between items-center mb-8">
             <div className=" backdrop-blur-sm rounded-lg p-3">
-              <img src="/rvitm-logo.png" alt="RVITM" className="h-20 w-auto" />
+              <img src="/rvitm-logo.png" alt="RVITM" className="h-20 lg:h-28 xl:h-32 w-auto" />
             </div>
             <div className="backdrop-blur-sm rounded-lg p-3">
-              <img src="/vtu-logo.png" alt="VTU" className="h-20 w-auto" />
+              <img src="/vtu-logo.png" alt="VTU" className="h-20 lg:h-28 xl:h-32 w-auto" />
             </div>
           </div>
 
