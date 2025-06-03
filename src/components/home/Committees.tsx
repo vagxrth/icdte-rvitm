@@ -424,34 +424,57 @@ const Committees: React.FC = () => {
           </div>
         </div>
 
-        {/* Other Chairs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* Other Chairs Grid - First Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Organizing Chair */}
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
-            <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Organizing Chair</h3>
-            <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.organizingChair.name}</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.organizingChair.title}</p>
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+            <div className="text-center">
+              <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-1">Organizing Chair</h3>
+              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.organizingChair.name}</h4>
+              <p className="text-gray-600 dark:text-gray-300">{executiveCommittee.organizingChair.title}</p>
+            </div>
           </div>
 
           {/* Technical Program Chair */}
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
-            <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Technical Program Chair</h3>
-            <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.technicalProgramChair.name}</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.technicalProgramChair.title}</p>
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+            <div className="text-center">
+              <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-1">Technical Program Chair</h3>
+              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.technicalProgramChair.name}</h4>
+              <p className="text-gray-600 dark:text-gray-300">{executiveCommittee.technicalProgramChair.title}</p>
+            </div>
           </div>
+        </div>
 
+        {/* Other Chairs Grid - Second Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Publication Chair */}
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
-            <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Publication Chair</h3>
-            <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.publicationChair.name}</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.publicationChair.title}</p>
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+            <div className="text-center">
+              <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-1">Publication Chair</h3>
+              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.publicationChair.name}</h4>
+              <p className="text-gray-600 dark:text-gray-300">{executiveCommittee.publicationChair.title}</p>
+            </div>
           </div>
 
           {/* Finance Chair */}
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md">
-            <h3 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2">Finance Chair</h3>
-            <h4 className="text-base font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.financeChair.name}</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{executiveCommittee.financeChair.title}</p>
+          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+            <div className="text-center">
+              <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-1">Finance Chair</h3>
+              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.financeChair.name}</h4>
+              <p className="text-gray-600 dark:text-gray-300">{executiveCommittee.financeChair.title}</p>
+            </div>
           </div>
         </div>
 
