@@ -5,7 +5,7 @@ import { importantDates } from '../../data/conferenceData';
 const ImportantDates: React.FC = () => {
   return (
     <section className="bg-gray-50 dark:bg-gray-800">
-      <div className="section-container page-padding">
+      <div className="section-container page-padding 2xl:pt-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title">Important Dates</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4">
