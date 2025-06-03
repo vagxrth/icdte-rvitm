@@ -69,7 +69,7 @@ const Committees: React.FC = () => {
       },
       {
         name: 'Dr.Srinatha N',
-        title: 'Prof. & HoD Physics Dept.'
+        title: 'Assistant Professor, Physics Dept.'
       },
       {
         name: 'Dr. M. Mrunalini',
