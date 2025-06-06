@@ -51,17 +51,24 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <Link
               to="registration"
-              className="btn btn-primary text-base md:text-lg px-8 py-3"
+              className="btn bg-primary-600 hover:bg-primary-700 text-white border-2 border-primary-600 hover:border-primary-700 text-base md:text-lg px-8 py-3 transition-all duration-300"
             >
               Register Now
             </Link>
             <Link
               to="https://cmt3.research.microsoft.com/ICDTE2025"
               target="_blank"
-              className="btn btn-outline text-white border-white hover:bg-white/10 text-base md:text-lg px-8 py-3"
+              className="btn bg-transparent hover:bg-rose-500/10 text-rose-300 border-2 border-rose-300 hover:border-rose-400 text-base md:text-lg px-8 py-3 transition-all duration-300"
             >
               Submit Paper
             </Link>
+            <a
+              href="/ICDTE2025.pdf"
+              download
+              className="btn bg-transparent hover:bg-amber-500/10 text-amber-300 border-2 border-amber-300 hover:border-amber-400 text-base md:text-lg px-8 py-3 transition-all duration-300"
+            >
+              Download Flyer
+            </a>
           </div>
 
           {/* Publication Partner Section - Centered Below Buttons */}
