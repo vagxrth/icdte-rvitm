@@ -4,10 +4,16 @@ import { Users } from 'lucide-react';
 const Committees: React.FC = () => {
   
   const executiveCommittee = {
-    chiefPatron: {
-      name: 'Dr. M.P. Shyam',
-      title: 'President, RSST, Bengaluru'
-    },
+    chiefPatron: [
+      {
+        name: 'Dr. M.P. Shyam',
+        title: 'President, RSST, Bengaluru'
+      },
+      {
+        name: 'Dr. S. Vidyashankar',
+        title: 'Vice Chancellor, VTU'
+      }
+    ],
     patrons: [
       {
         name: 'Dr. A.V.S Murthy',
@@ -24,6 +30,14 @@ const Committees: React.FC = () => {
       {
         name: 'Sri. P.S Nanda Kumar',
         title: 'Governing Council Chairman, RVITM'
+      },
+      {
+        name: 'Dr. Rangaswamy B E',
+        title: 'Registrar (Academics) VTU'
+      },
+      {
+        name: 'Dr. T. N. Sreenivasa',
+        title: 'Registrar (Evaluation) VTU'
       }
     ],
     generalChair: {
@@ -75,6 +89,76 @@ const Committees: React.FC = () => {
         name: 'Dr. M. Mrunalini',
         title: 'Prof. & HoD MCA'
       }
+    ],
+    technicalAdvisoryCommittee: [
+      {
+        name: 'Dr. Rajkumar Buyya',
+        title: 'University of Melbourne'
+      },
+      {
+        name: 'Dr. Subrahmanyam Murala',
+        title: 'CVPR Lab, SCSS, Trinity College Dublin, Ireland'
+      },
+      {
+        name: 'Dr. C Krishna Mohan',
+        title: 'Professor, IIT Hyderabad'
+      },
+      {
+        name: 'Dr. G. K. Singh',
+        title: 'Professor, IIT Roorkee'
+      },
+      {
+        name: 'Dr. S D Roy',
+        title: 'Professor, IIT, Delhi'
+      },
+      {
+        name: 'Dr. R S Anand',
+        title: 'IIT Roorkee'
+      },
+      {
+        name: 'Dr. Sneha Singh',
+        title: 'IIT Mandi'
+      },
+      {
+        name: 'Dr. Sudarshan Iyengar',
+        title: 'IIT Ropar'
+      },
+      {
+        name: 'Dr. Ambarisha Mishra',
+        title: 'NIT Patna'
+      },
+      {
+        name: 'Dr. Deep Gupta',
+        title: 'VNIT, Nagpur'
+      },
+      {
+        name: 'Dr. Subramanya K N ',
+        title: 'Principal, RVCE'
+      },
+      {
+        name: 'Dr. Bheemsha Arya',
+        title: 'Principal, BMSCE'
+      },
+      {
+        name: 'Dr. Krishnamurthy G N',
+        title: 'Additional Director, BNMIT'
+      },
+      {
+        name: 'Dr. Ramakanth K P',
+        title: 'Professor & Dean CSE, RVCE'
+      },
+      {
+        name: 'N.K. Cauvery',
+        title: 'Professor RVCE'
+      },
+      {
+        name: 'Dr. Girish G S',
+        title: 'Professor & Chairman CSE, DSU'
+      },
+      {
+        name: 'Dr. Shylaja S S.',
+        title: 'Former Chairperson, CSE PESU'
+      },
     ],
     organizingCommittee: {
       cse: [
@@ -372,15 +456,19 @@ const Committees: React.FC = () => {
 
         {/* Chief Patron */}
         <div className="mb-12">
-          <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md max-w-md mx-auto">
-            <div className="text-center">
-              <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+          <h3 className="text-2xl font-semibold text-center text-primary-600 dark:text-primary-400 mb-8">Chief Patrons</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {executiveCommittee.chiefPatron.map((patron, index) => (
+              <div key={index} className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+                <div className="text-center">
+                  <div className="bg-primary-100 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+                  </div>
+                  <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{patron.name}</h4>
+                  <p className="text-gray-600 dark:text-gray-300">{patron.title}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-1">Chief Patron</h3>
-              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-1">{executiveCommittee.chiefPatron.name}</h4>
-              <p className="text-gray-600 dark:text-gray-300">{executiveCommittee.chiefPatron.title}</p>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -479,12 +567,30 @@ const Committees: React.FC = () => {
         </div>
 
         {/* Advisory Committee Section */}
-        <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+        <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md mb-12">
           <h3 className="text-2xl font-semibold text-center text-primary-600 dark:text-primary-400 mb-8">
             Advisory Committee
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {executiveCommittee.advisoryCommittee.map((member, index) => (
+              <div 
+                key={index} 
+                className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg hover:shadow-md transition-shadow duration-300"
+              >
+                <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-2">{member.name}</h4>
+                <p className="text-gray-600 dark:text-gray-300">{member.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Technical Advisory Committee Section */}
+        <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-md">
+          <h3 className="text-2xl font-semibold text-center text-primary-600 dark:text-primary-400 mb-8">
+            Technical Advisory Committee
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {executiveCommittee.technicalAdvisoryCommittee.map((member, index) => (
               <div 
                 key={index} 
                 className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg hover:shadow-md transition-shadow duration-300"
