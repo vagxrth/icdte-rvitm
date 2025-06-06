@@ -47,10 +47,6 @@ const Hero: React.FC = () => {
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
             Exploring the Frontiers of Technology and Engineering in the Digital Era.
           </p>
-          
-          <p className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-            The <a className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors" target="_blank" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=/">Microsoft CMT service</a> was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-          </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <Link
