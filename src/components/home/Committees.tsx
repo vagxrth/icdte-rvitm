@@ -148,7 +148,7 @@ const Committees: React.FC = () => {
         title: 'Professor & Dean CSE, RVCE'
       },
       {
-        name: 'N.K. Cauvery',
+        name: 'Dr. N.K. Cauvery',
         title: 'Professor RVCE'
       },
       {
