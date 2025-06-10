@@ -16,7 +16,7 @@ const Committees: React.FC = () => {
     ],
     patrons: [
       {
-        name: 'Dr. A.V.S Murthy',
+        name: 'Dr.(h.c) A.V.S Murthy',
         title: 'Hon. Secretary, RSST'
       },
       {
