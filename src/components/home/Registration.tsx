@@ -48,7 +48,23 @@ const Registration: React.FC = () => {
             discounts are available until August 08, 2025.
           </p>
         </div>
-        
+
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <button
+            onClick={() => window.open('https://forms.gle/bwLMNSE3oUa3NfV8A', '_blank')}
+            className="btn-primary text-lg px-8 py-3 rounded-lg transition-all duration-200 hover:scale-105"
+          >
+            Register Now
+          </button>
+          <button
+            onClick={() => window.open('https://wds-prd.rvei.edu.in:4430/sap/bc/ui5_ui5/sap/zeventregister/#/scode/ICDTE-2025', '_blank')}
+            className="text-lg px-8 py-3 rounded-lg transition-all duration-200 bg-transparent hover:bg-amber-500/10 text-amber-300 border-2 border-amber-300 hover:border-amber-400 hover:scale-105"
+          >
+            Pay Now
+          </button>
+        </div>
+
         {/* Registration Cards Scroll Area */}
         <div className="relative py-6 overflow-visible">
           {/* Left Fade */}
@@ -79,13 +95,7 @@ const Registration: React.FC = () => {
                       {type.description}
                     </p>
                   </div>
-                  <div className="p-6 pt-0 mt-auto">
-                    <button
-                      className="w-full btn-outline text-base py-3 rounded-lg transition-all duration-200 border-2 border-primary-500 text-primary-500 bg-transparent hover:bg-primary-600 hover:text-white hover:border-primary-600"
-                    >
-                      Register Now
-                    </button>
-                  </div>
+
                 </div>
               </div>
             ))}
