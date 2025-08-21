@@ -41,9 +41,9 @@ const Registration: React.FC = () => {
   return (
     <section className="bg-gray-50 dark:bg-gray-800 overflow-visible">
       <div className="section-container page-padding overflow-visible 2xl:pt-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="section-title">Registration</h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-4">
+          <p className="text-gray-600 dark:text-gray-300 mt-2">
             Join us at ICDTE 2025 by completing the payment and registration process.
           </p>
         </div>
