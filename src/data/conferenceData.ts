@@ -121,42 +121,30 @@ export const speakers: Speaker[] = [
 export const importantDates: ImportantDate[] = [
   {
     id: 1,
-    title: 'Manuscript Submission Starts',
-    date: 'June 05, 2025',
-    description: 'Authors can submit their manuscripts'
-  },
-  {
-    id: 2,
     title: 'Manuscript Submission Deadline',
-    date: 'August 10, 2025',
+    date: 'September 20, 2025',
     description: 'Last day for submitting manuscripts'
   },
   {
-    id: 3,
+    id: 2,
     title: 'Notification of Acceptance',
-    date: 'August 20, 2025',
+    date: 'September 25, 2025',
     description: 'Notification of acceptance will be sent to authors'
   },
   {
-    id: 4,
-    title: 'Early Bird Registration Deadline',
-    date: 'August 30, 2025',
-    description: 'Last day for early bird registration'
-  },
-  {
-    id: 5,
+    id: 3,
     title: 'Camera-ready Submission',
-    date: 'September 10, 2025',
+    date: 'September 30, 2025',
     description: 'Deadline for submitting camera-ready papers'
   },
   {
-    id: 6,
+    id: 4,
     title: 'Registration Deadline',
-    date: 'September 15, 2025',
+    date: 'October 05, 2025',
     description: 'Last day for registration'
   },
   {
-    id: 7,
+    id: 5,
     title: 'Conference Dates',
     date: 'October 16-17, 2025',
     description: 'Main dates of the conference'
