@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
-            Exploring the Frontiers of Technology and Engineering in the Digital Era.
+          All accepted and presented papers will be submitted for inclusion in springer book series( IOT, Communication Networks ,Evolutionary Algorithms).
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
